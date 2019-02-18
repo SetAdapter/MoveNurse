@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.fy.widget.CheckableLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="1dp">
+
+
+    <CheckBox
+            android:id="@+id/tv_DepartId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:duplicateParentState="true"
+            android:padding="10dp"
+            style="@style/followupCheckBox"
+            android:textColor="@color/tab_textcolor"
+            android:textSize="@dimen/textSize_medium"/>
+
+    <EditText
+            android:id="@+id/other_matter"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:background="@drawable/edittext_bg"
+            android:ellipsize="end"
+            android:gravity="top"
+            android:layout_below="@id/tv_DepartId"
+            android:visibility="gone"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:maxLines="3"
+            android:maxLength="200"
+            android:lines="5"/>
+
+    <TextView
+            android:id="@+id/tv_context"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:visibility="gone"
+            android:layout_below="@id/other_matter"
+            android:textColor="@color/color_main_string"
+            android:textSize="20dp"/>
+
+</com.fy.widget.CheckableLayout>

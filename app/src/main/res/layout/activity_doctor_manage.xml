@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="10dp"
+        android:background="@color/color_main_bg" >
+
+        <TextView
+            android:id="@+id/tvSelectLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/selected"
+            android:gravity="center"
+            android:padding="@dimen/spacing_small"
+            android:text="现行医嘱"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_medium"/>
+
+        <TextView
+            android:id="@+id/tvLabel1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/spacing_small"
+            android:text="医嘱明细查询"
+            android:textColor="@color/myTxtLight"
+            android:textSize="@dimen/textSize_medium"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal"
+            android:gravity="center" >
+
+            <RadioButton
+                android:id="@+id/tvMedicationOrders"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingLeft="@dimen/spacing_small"
+                android:paddingRight="@dimen/spacing_small"
+                android:text="药物医嘱"
+                android:textColor="@color/select_color_orders"
+                android:textSize="@dimen/textSize_medium"/>
+
+            <include layout="@layout/item_line_vertical"/>
+
+            <RadioButton
+                android:id="@+id/tvImplementOrders"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingLeft="@dimen/spacing_small"
+                android:paddingRight="@dimen/spacing_small"
+                android:text="处置医嘱"
+                android:textColor="@color/select_color_orders"
+                android:textSize="@dimen/textSize_medium"/>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tvSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_btn_bg"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_medium"/>
+
+    </LinearLayout>
+
+    <include layout="@layout/item_line"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+
+        <FrameLayout
+            android:id="@+id/fmPatientInfo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"/>
+
+        <include layout="@layout/item_line_vertical"/>
+
+        <FrameLayout
+            android:id="@+id/fmContent"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8"/>
+    </LinearLayout>
+
+</LinearLayout>

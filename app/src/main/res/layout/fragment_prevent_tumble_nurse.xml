@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="20dp"
+                android:orientation="vertical">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/textSize_medium_large"
+                        android:textColor="@color/common_text1"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"
+                        android:text="住院患者防跌倒/坠床知情同意书"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:id="@+id/tv_Dict_TypeName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:lineSpacingExtra="2dp"
+                        android:lineSpacingMultiplier="1.5"
+                        android:padding="10dp"
+                        android:textColor="@color/common_text2"
+                        android:textSize="16dp"
+                        android:gravity="center|left"/>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:weightSum="10">
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:weightSum="10"
+                        android:baselineAligned="false">
+
+                    <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="10"
+                            android:layout_height="wrap_content"
+                            android:baselineAligned="false">
+
+                        <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="5"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                            <TextView
+                                    android:id="@+id/tv_CreateDate"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/textSize_medium"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="30dp"
+                                    android:text="患者、家属签名: "/>
+
+                            <ImageView
+                                    android:id="@+id/relation_et"
+                                    android:layout_width="258dp"
+                                    android:layout_height="135dp"
+                                    android:background="@drawable/edittext_bg"
+                                    android:textColor="@color/common_text3"
+                                    android:textSize="18sp"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:baselineAligned="false">
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_height="wrap_content"
+                            android:focusable="true"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="10dp"
+                            android:focusableInTouchMode="true"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/textSize_medium"
+                                android:text="患者与家属关系:"/>
+
+                        <EditText
+                                android:id="@+id/tv_FZ_Nurse"
+                                android:layout_width="150dp"
+                                android:layout_height="30dp"
+                                android:maxLength="6"
+                                android:hint="与患者关系"
+                                android:gravity="center"
+                                android:background="@drawable/edittext_bg"
+                                android:textColor="@color/common_text3"
+                                android:textSize="18sp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible"
+                        android:weightSum="10"
+                        android:baselineAligned="false">
+
+                    <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="10"
+                            android:layout_marginTop="10dp"
+                            android:layout_height="wrap_content"
+                            android:baselineAligned="false">
+
+                        <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="5"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                            <TextView
+                                    android:id="@+id/EXENurseName"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/textSize_medium"
+                                    android:layout_marginLeft="30dp"
+                                    android:text="宣教护士:"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="5"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                            <TextView
+                                    android:id="@+id/tv_mCreateDate"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/textSize_medium"
+                                    android:text="签字日期:"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                    android:id="@+id/save_btn"
+                    android:layout_width="150dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/login_btn_bg"
+                    android:padding="10dp"
+                    android:text="保    存"
+                    android:textColor="@color/color_main_white"
+                    android:textSize="@dimen/textSize_medium"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

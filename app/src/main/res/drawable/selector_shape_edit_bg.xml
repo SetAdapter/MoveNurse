@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 输入框 背景选择器 -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="true">
+        <shape android:shape="rectangle">
+
+            <stroke android:width="@dimen/shape_Stroke"
+                android:color="@color/drug_select"/>
+
+            <solid android:color="@android:color/transparent" />
+
+            <!-- 圆角 -->
+            <corners android:radius="500dp" />
+
+        </shape>
+    </item>
+
+    <item>
+        <shape android:shape="rectangle">
+
+            <stroke android:width="@dimen/shape_Stroke"
+                android:color="@color/shape_stroke"/>
+
+
+            <solid android:color="@android:color/transparent" />
+            <!-- 圆角 -->
+            <corners android:radius="500dp" />
+        </shape>
+    </item>
+</selector>

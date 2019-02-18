@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/color_main_bg"
+    android:padding="12dp">
+
+    <TextView
+        android:id="@+id/tv_patient_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="住  院  ID："
+        android:textColor="@color/myTxtColor"
+        android:textSize="18dp"/>
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_patient_id"
+        android:layout_marginTop="10dp"
+        android:text="姓  名     ："
+        android:textColor="@color/myTxtColor"
+        android:textSize="18dp"/>
+
+    <TextView
+        android:id="@+id/tvSex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvName"
+        android:layout_marginTop="10dp"
+        android:text="性  别     ："
+        android:textColor="@color/myTxtColor"
+        android:textSize="18dp"/>
+
+    <TextView
+        android:id="@+id/tvModifyDepartment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvSex"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/login_btn_bg"
+        android:text="修改"
+        android:textColor="@color/white"
+        android:textSize="18dp"/>
+
+    <TextView
+        android:id="@+id/tvModifyBed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvModifyDepartment"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/login_btn_bg"
+        android:gravity="center"
+        android:text="修改"
+        android:textColor="@color/white"
+        android:textSize="18dp"/>
+
+    <TextView
+        android:id="@+id/tvPackBed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvModifyBed"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@drawable/login_btn_bg"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="修改"
+        android:visibility="invisible"
+        android:textColor="@color/white"
+        android:textSize="18dp"/>
+
+    <TextView
+        android:id="@+id/tvDepartment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toLeftOf="@id/tvModifyDepartment"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvModifyDepartment"
+        app:layout_constraintBottom_toBottomOf="@id/tvModifyDepartment"
+        android:gravity="center_vertical"
+        android:text="当前科室："
+        android:textColor="@color/myTxtColor"
+        android:textSize="18dp"/>
+
+    <TextView
+        android:id="@+id/tvBed"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/tvModifyBed"
+        app:layout_constraintTop_toTopOf="@id/tvModifyBed"
+        app:layout_constraintBottom_toBottomOf="@id/tvModifyBed"
+        android:gravity="center_vertical"
+        android:text="患者床位："
+        android:textColor="@color/myTxtColor"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/tvSelectPackBed"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/tvPackBed"
+        app:layout_constraintTop_toTopOf="@id/tvPackBed"
+        app:layout_constraintBottom_toBottomOf="@id/tvPackBed"
+        android:layout_below="@id/tvBed"
+        android:gravity="center_vertical"
+        android:text="包床床位："
+        android:textColor="@color/myTxtColor"
+        android:textSize="18dp"/>
+
+
+
+
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvSelectPackBed"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical"
+        android:text="病床状态："
+        android:textColor="@color/myTxtColor"
+        android:textSize="18dp"/>
+
+    <RadioGroup
+        android:id="@+id/rgStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvStatus"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rbtnDisease"
+            style="@style/followupRadioBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="患者在院"/>
+
+        <RadioButton
+            android:id="@+id/rbtnLeave"
+            style="@style/followupRadioBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="请假"/>
+
+        <RadioButton
+            android:id="@+id/rbtnPackBed"
+            style="@style/followupRadioBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="包床"/>
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/tvSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/rgStatus"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/login_btn_bg"
+        android:text="保存"
+        android:textColor="@color/white"
+        android:textSize="18dp"/>
+
+</android.support.constraint.ConstraintLayout>

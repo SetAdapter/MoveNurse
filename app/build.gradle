@@ -1,0 +1,47 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+    defaultConfig {
+        applicationId "com.example.hjy.movenurse"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+    buildToolsVersion '26.0.2'
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    testCompile 'junit:junit:4.12'
+
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+
+    compile project(':baselibrary')
+    compile project(':pickerImg')
+    compile project(':pickerview')
+
+    compile files('libs/zbardecoder.jar')
+    compile files('libs/zixing-core-3.2.0.jar')
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'me.grantland:autofittextview:0.2.1' //textview 文字动态改变大小
+}

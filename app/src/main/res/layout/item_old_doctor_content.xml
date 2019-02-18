@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/itemSplit_line"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <include layout="@layout/item_line_vertical"/>
+
+    <TextView
+        android:id="@+id/tvItemName"
+        style="@style/recordTitle"
+        android:layout_width="185dp"
+        android:textColor="@color/myTxtColor"
+        android:text="项目名称"/>
+
+    <include layout="@layout/item_line_vertical"/>
+
+    <TextView
+        android:id="@+id/tvDosage"
+        style="@style/recordTitle"
+        android:layout_width="105dp"
+        android:textColor="@color/myTxtColor"
+        android:text="剂量"/>
+
+    <include layout="@layout/item_line_vertical"/>
+
+    <TextView
+        android:id="@+id/tvFrequency"
+        style="@style/recordTitle"
+        android:layout_width="110dp"
+        android:textColor="@color/myTxtColor"
+        android:text="执行频率"/>
+
+    <include layout="@layout/item_line_vertical"/>
+
+    <TextView
+        android:id="@+id/tvChannel"
+        style="@style/recordTitle"
+        android:layout_width="110dp"
+        android:textColor="@color/myTxtColor"
+        android:text="给药途径"/>
+
+    <include layout="@layout/item_line_vertical"/>
+
+    <TextView
+        android:id="@+id/tvGroupNumber"
+        style="@style/recordTitle"
+        android:layout_width="55dp"
+        android:textColor="@color/myTxtColor"
+        android:text="组号"/>
+
+    <include layout="@layout/item_line_vertical"/>
+
+    <TextView
+        android:id="@+id/tvRunTime"
+        style="@style/recordTitle"
+        android:layout_width="160dp"
+        android:textColor="@color/myTxtColor"
+        android:text="执行时间"/>
+
+    <include layout="@layout/item_line_vertical"/>
+
+    <TextView
+        android:id="@+id/tvRunName"
+        style="@style/recordTitle"
+        android:layout_width="115dp"
+        android:textColor="@color/myTxtColor"
+        android:text="执行签名"/>
+
+    <include layout="@layout/item_line_vertical"/>
+
+</LinearLayout>

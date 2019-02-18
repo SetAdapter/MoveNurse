@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:layout_marginTop="1dp"
+              android:layout_marginBottom="1dp"
+              android:orientation="horizontal">
+
+    <TextView
+            android:id="@+id/tvDate"
+            style="@style/recordTitle"
+            android:layout_width="150dp"
+            android:textColor="@color/myTxtLight"
+            android:text="日期"/>
+
+    <include layout="@layout/item_line_vertical"/>
+
+    <TextView
+            android:id="@+id/tvTime"
+            style="@style/recordTitle"
+            android:layout_width="62dp"
+            android:textColor="@color/myTxtLight"
+            android:text="时间"/>
+
+    <include layout="@layout/item_line_vertical"/>
+
+    <TextView
+            android:id="@+id/tv_VitalSign"
+            style="@style/recordTitle"
+            android:layout_width="62dp"
+            android:textColor="@color/myTxtLight"
+            android:text="T\n(°C)"/>
+
+    <include layout="@layout/item_line_vertical"/>
+
+    <TextView
+            android:id="@+id/tv_VitalSign_PAndHR"
+            style="@style/recordTitle"
+            android:textColor="@color/myTxtLight"
+            android:layout_width="62dp"
+            android:text="p/HR\n(次/分)"/>
+
+    <include layout="@layout/item_line_vertical"/>
+
+    <TextView
+            android:id="@+id/tv_VitalSign_R"
+            style="@style/recordTitle"
+            android:layout_width="75dp"
+            android:textColor="@color/myTxtLight"
+            android:text="R\n(次/分)"/>
+
+    <include layout="@layout/item_line_vertical"/>
+
+    <TextView
+            android:id="@+id/tv_VitalSign_BP"
+            style="@style/recordTitle"
+            android:layout_width="75dp"
+            android:textColor="@color/myTxtLight"
+            android:text="BP\n(mmHg)"/>
+
+    <include layout="@layout/item_line_vertical"/>
+
+    <TextView
+            android:id="@+id/tv_Consciousness"
+            style="@style/recordTitle"
+            android:textColor="@color/myTxtLight"
+            android:layout_width="140dp"
+            android:text="意识"/>
+
+    <include layout="@layout/item_line_vertical"/>
+
+    <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="match_parent">
+
+        <TextView
+                android:id="@+id/tv_In_Content"
+                style="@style/recordTitle"
+                android:textColor="@color/myTxtLight"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="内容"/>
+
+        <include layout="@layout/item_line_vertical"/>
+
+        <TextView
+                android:id="@+id/tv_In_Amount"
+                style="@style/recordTitle"
+                android:layout_width="0dp"
+                android:textColor="@color/myTxtLight"
+                android:layout_weight="1"
+                android:text="量"/>
+
+    </LinearLayout>
+
+    <include layout="@layout/item_line_vertical"/>
+
+    <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="match_parent">
+
+        <TextView
+                android:id="@+id/tv_Out_Content"
+                style="@style/recordTitle"
+                android:layout_width="0dp"
+                android:textColor="@color/myTxtLight"
+                android:layout_weight="1"
+                android:text="内容"/>
+
+        <include layout="@layout/item_line_vertical"/>
+
+        <TextView
+                android:id="@+id/tv_Out_Amount"
+                style="@style/recordTitle"
+                android:layout_width="0dp"
+                android:textColor="@color/myTxtLight"
+                android:layout_weight="1"
+                android:text="量"/>
+
+    </LinearLayout>
+
+    <include layout="@layout/item_line_vertical"/>
+
+    <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="match_parent">
+
+        <TextView
+                android:id="@+id/tv_LeftPD"
+                style="@style/recordTitle"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textColor="@color/myTxtLight"
+                android:text="直径(mm)"/>
+
+        <include layout="@layout/item_line_vertical"/>
+
+        <TextView
+                android:id="@+id/tv_LeftIrisCR"
+                style="@style/recordTitle"
+                android:layout_width="0dp"
+                android:textColor="@color/myTxtLight"
+                android:layout_weight="1"
+                android:text="反射"/>
+
+    </LinearLayout>
+
+    <include layout="@layout/item_line_vertical"/>
+
+    <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content">
+
+        <TextView
+                android:id="@+id/tv_RightPD"
+                style="@style/recordTitle"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textColor="@color/myTxtLight"
+                android:text="直径(mm)"/>
+
+        <include layout="@layout/item_line_vertical"/>
+
+        <TextView
+                android:id="@+id/tv_RightIrisCR"
+                style="@style/recordTitle"
+                android:textColor="@color/myTxtLight"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="反射"/>
+
+    </LinearLayout>
+
+    <include layout="@layout/item_line_vertical"/>
+
+    <TextView
+            android:id="@+id/tv_OtherSituation"
+            style="@style/recordTitle"
+            android:layout_width="300dp"
+            android:gravity="center"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/myTxtLight"
+            android:text="病情观察及措施"/>
+
+    <include layout="@layout/item_line_vertical"/>
+
+    <TextView
+            android:id="@+id/tv_QualityControlNurse"
+            style="@style/recordTitle"
+            android:layout_width="125dp"
+            android:textColor="@color/myTxtLight"
+            android:text="护士签名"/>
+
+    <include layout="@layout/item_line_vertical"/>
+</LinearLayout>

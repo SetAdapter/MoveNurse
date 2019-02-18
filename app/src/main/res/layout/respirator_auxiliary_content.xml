@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:layout_marginBottom="1dp"
+              android:layout_marginTop="1dp"
+              android:orientation="horizontal">
+
+    <TextView
+            android:id="@+id/tvDate"
+            style="@style/recordTitle"
+            android:layout_width="150dp"
+            android:textColor="@color/myTxtLight"
+            android:text="日期"/>
+
+    <include layout="@layout/item_line_vertical"/>
+
+    <TextView
+            android:id="@+id/tvTime"
+            style="@style/recordTitle"
+            android:layout_width="62dp"
+            android:textColor="@color/myTxtLight"
+            android:text="时间"/>
+
+    <include layout="@layout/item_line_vertical"/>
+
+    <LinearLayout
+            android:layout_width="800dp"
+            android:layout_height="match_parent">
+
+        <TextView
+                android:id="@+id/tv_av"
+                style="@style/recordTitle"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:textColor="@color/myTxtLight"
+                android:text="通气模式"/>
+
+        <include layout="@layout/item_line_vertical"/>
+
+        <TextView
+                android:id="@+id/tv_FiO2"
+                style="@style/recordTitle"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textColor="@color/myTxtLight"
+                android:text="FiO₂(%)"/>
+
+        <include layout="@layout/item_line_vertical"/>
+
+        <TextView
+                android:id="@+id/tv_rr"
+                style="@style/recordTitle"
+                android:layout_width="0dp"
+                android:textColor="@color/myTxtLight"
+                android:layout_weight="1"
+                android:text="RR(次/分)"/>
+
+        <include layout="@layout/item_line_vertical"/>
+
+        <TextView
+                android:id="@+id/tv_pip"
+                style="@style/recordTitle"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textColor="@color/myTxtLight"
+                android:text="PIP(cmH2O)"/>
+
+        <include layout="@layout/item_line_vertical"/>
+
+        <TextView
+                android:id="@+id/tv_peep"
+                style="@style/recordTitle"
+                android:textColor="@color/myTxtLight"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="PEEP(cmH2O)"/>
+
+        <include layout="@layout/item_line_vertical"/>
+
+        <TextView
+                android:id="@+id/tv_ie"
+                style="@style/recordTitle"
+                android:layout_width="0dp"
+                android:textColor="@color/myTxtLight"
+                android:layout_weight="1"
+                android:text="I:E"/>
+    </LinearLayout>
+
+    <include layout="@layout/item_line_vertical"/>
+
+    <LinearLayout
+            android:layout_width="1000dp"
+            android:layout_height="match_parent">
+
+        <TextView
+                android:id="@+id/tv_sa02"
+                style="@style/recordTitle"
+                android:textColor="@color/myTxtLight"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="SaO₂(%)"/>
+
+        <include layout="@layout/item_line_vertical"/>
+
+        <TextView
+                android:id="@+id/tv_ph"
+                style="@style/recordTitle"
+                android:layout_width="0dp"
+                android:textColor="@color/myTxtLight"
+                android:layout_weight="1"
+                android:text="PH"/>
+
+        <include layout="@layout/item_line_vertical"/>
+
+        <TextView
+                android:id="@+id/tv_pc02"
+                style="@style/recordTitle"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textColor="@color/myTxtLight"
+                android:text="PCO₂(mmHg)"/>
+
+        <include layout="@layout/item_line_vertical"/>
+
+        <TextView
+                android:id="@+id/tv_po2"
+                style="@style/recordTitle"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textColor="@color/myTxtLight"
+                android:text="PO₂(mmHg)"/>
+
+        <include layout="@layout/item_line_vertical"/>
+
+        <TextView
+                android:id="@+id/tv_hc03"
+                style="@style/recordTitle"
+                android:layout_width="0dp"
+                android:textColor="@color/myTxtLight"
+                android:layout_weight="1"
+                android:text="HCO3(mmol/L)"/>
+
+        <include layout="@layout/item_line_vertical"/>
+
+        <TextView
+                android:id="@+id/tv_be"
+                style="@style/recordTitle"
+                android:textColor="@color/myTxtLight"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="BE(B)(mmol/L)"/>
+
+        <include layout="@layout/item_line_vertical"/>
+
+        <TextView
+                android:id="@+id/tv_LacticAcid"
+                style="@style/recordTitle"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textColor="@color/myTxtLight"
+                android:text="乳酸(%)"/>
+    </LinearLayout>
+
+    <include layout="@layout/item_line_vertical"/>
+
+    <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="match_parent">
+
+        <TextView
+                android:id="@+id/tv_TCType"
+                style="@style/recordTitle"
+                android:layout_width="0dp"
+                android:textColor="@color/myTxtLight"
+                android:layout_weight="1"
+                android:text="气管导管型号"/>
+
+        <include layout="@layout/item_line_vertical"/>
+
+        <TextView
+                android:id="@+id/tv_TCDepth"
+                style="@style/recordTitle"
+                android:layout_width="0dp"
+                android:textColor="@color/myTxtLight"
+                android:layout_weight="1"
+                android:text="气导管插入深度(cm)"/>
+    </LinearLayout>
+
+    <include layout="@layout/item_line_vertical"/>
+
+    <TextView
+            android:id="@+id/tv_ExecutiveNurse"
+            style="@style/recordTitle"
+            android:layout_width="125dp"
+            android:textColor="@color/myTxtLight"
+            android:text="护士签名"/>
+
+    <include layout="@layout/item_line_vertical"/>
+
+</LinearLayout>

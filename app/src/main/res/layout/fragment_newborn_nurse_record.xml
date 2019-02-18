@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="40dp"
+            android:orientation="vertical">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="10">
+
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:padding="10dp"
+                        android:text="出生日期:"
+                        android:textColor="@color/color_main_string"
+                        android:textSize="@dimen/textSize_medium_small"/>
+
+                <TextView
+                        android:id="@+id/tvHospitalDate"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"
+                        android:textSize="@dimen/textSize_medium"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/item_line"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="10">
+
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:padding="10dp"
+                        android:text="入院诊断:"
+                        android:textColor="@color/color_main_string"
+                        android:textSize="@dimen/textSize_medium_small"/>
+
+                <TextView
+                        android:id="@+id/tvAdmissionDiagnosis"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="8"
+                        android:textSize="@dimen/textSize_medium"/>
+            </LinearLayout>
+
+            <include layout="@layout/item_line"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:weightSum="10">
+
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:padding="10dp"
+                        android:text="生命体征:"
+                        android:textColor="@color/color_main_string"
+                        android:textSize="@dimen/textSize_medium_small"/>
+
+                <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="8"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="T："
+                            android:textSize="@dimen/textSize_medium_small"/>
+
+                    <EditText
+                            android:id="@+id/t_et"
+                            android:layout_width="45dp"
+                            android:layout_height="30dp"
+                            android:maxLength="6"
+                            android:gravity="center"
+                            android:inputType="number|numberDecimal"
+                            android:background="@drawable/edittext_bg"
+                            android:textColor="@color/common_text3"
+                            android:textSize="@dimen/textSize_medium_small"/>
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/spacing_small_much"
+                            android:text="°C"
+                            android:textSize="@dimen/textSize_medium_small"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <include layout="@layout/item_line"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rvDepart"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:scrollbars="none"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/item_line"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="10">
+
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:padding="10dp"
+                        android:text="喂养种类:"
+                        android:textColor="@color/color_main_string"
+                        android:textSize="@dimen/textSize_medium_small"/>
+
+                <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="3"
+                        android:baselineAligned="false">
+
+                    <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                        <EditText
+                                android:id="@+id/FeedType"
+                                android:layout_width="200dp"
+                                android:layout_height="30dp"
+                                android:maxLength="30"
+                                android:paddingLeft="8dp"
+                                android:background="@drawable/edittext_bg"
+                                android:textColor="@color/common_text3"
+                                android:textSize="@dimen/textSize_medium_small"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <include layout="@layout/item_line"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="10">
+
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:padding="10dp"
+                        android:text="吸氧流量:"
+                        android:textColor="@color/color_main_string"
+                        android:textSize="@dimen/textSize_medium_small"/>
+
+                <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="8"
+                        android:baselineAligned="false">
+
+                    <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+
+                        <EditText
+                                android:id="@+id/OxygenFlowRate"
+                                android:layout_width="62dp"
+                                android:layout_height="30dp"
+                                android:maxLength="6"
+                                android:gravity="center"
+                                android:inputType="number|numberDecimal"
+                                android:background="@drawable/edittext_bg"
+                                android:textColor="@color/common_text3"
+                                android:textSize="@dimen/textSize_medium_small"/>
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="@dimen/spacing_small_much"
+                                android:text="L/min"
+                                android:textSize="@dimen/textSize_medium_small"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <include layout="@layout/item_line"/>
+
+            <TextView
+                    android:id="@+id/tvObservation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="特诉情况记录:"
+                    android:textColor="@color/color_main_string"
+                    android:textSize="@dimen/textSize_medium_small"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp">
+
+                <View
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"/>
+
+                <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="8">
+
+                    <EditText
+                            android:id="@+id/OtherSituation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="40dp"
+                            android:background="@drawable/edittext_bg"
+                            android:lines="5"
+                            android:paddingLeft="8dp"
+                            android:maxLines="5"
+                            android:maxLength="200"
+                            android:ellipsize="end"
+                            android:gravity="top"
+                            android:textSize="@dimen/textSize_medium_small"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <include layout="@layout/item_line"/>
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="40dp">
+
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                    <TextView
+                            android:id="@+id/ExecutiveNurse"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="护士签名:"
+                            android:textColor="@color/color_main_string"
+                            android:textSize="@dimen/textSize_medium_small"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="质控护士签名:"
+                            android:textColor="@color/color_main_string"
+                            android:textSize="@dimen/textSize_medium_small"/>
+
+                    <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/textSize_medium"
+                            android:visibility="invisible"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@android:drawable/ic_menu_recent_history"
+            app:backgroundTint="@color/drug_select"/>
+    <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/login_btn_bg"
+            android:gravity="center"
+            android:text="保   存"
+            android:textColor="@color/common_color_white"
+            android:textSize="@dimen/textSize_medium_small"/>
+
+</RelativeLayout>

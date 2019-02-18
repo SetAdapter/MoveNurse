@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">移动护理</string>
+
+    <string name="scanQRcode">扫一扫</string>
+
+    <string name="patientId">病人ID：%1$s</string>
+    <string name="area">病区：%1$s</string>
+    <string name="dept">科室：%1$s</string>
+    <string name="bedNum">床号：%1$s</string>
+    <string name="name">姓名：%1$s</string>
+    <string name="sex">性别：%1$s</string>
+    <string name="age">年龄：%1$s</string>
+    <string name="hospitalId">住院号：%1$s</string>
+    <string name="marriage">婚姻：%1$s</string>
+    <string name="profession">职业：%1$s</string>
+    <string name="QCclerkName">质控护士签名：%1$s</string>
+    <string name="ExecutiveNurse">护士签名：%1$s</string>
+
+    <string name="hospitalizationID">住  院  I D：%1$s</string>
+    <string name="department">当前科室：%1$s</string>
+    <string name="bed">患者床位：%1$s</string>
+    <string name="packBed">包床床位：%1$s</string>
+    <string name="leavepackBed">当前床位：%1$s</string>
+
+    <string name="cancle">取消</string>
+    <string name="title">请选择时间</string>
+    <string name="commit">确定</string>
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="day">日</string>
+    <string name="hour">时</string>
+    <string name="minute">分</string>
+
+    <string name="select_date">选择日期</string>
+    <string name="current_date">当前日期</string>
+    <string name="select_time">选择时间</string>
+    <string name="current_time">当前时间</string>
+    <string name="reject">通过对患者进行压疮的风险评估,属于高危患者,依据患者个人病情需加强翻身防压疮,因患者个人原因及家属强烈要求拒绝翻身,由此所导致的皮肤损伤均由患者及其家属承担,并签字以示患者及家属知晓。</string>
+    <string name="hotbag">因病情致皮肤感觉较差或丧失,如果现在使用热水袋,很容易引起皮肤烫伤,请暂时不要使用热水袋。若家属要求私自使用热水袋由此而导致的任何意外将由自己负责,家属表示理解,特签名为证。</string>
+    <string name="health_title">作为一项护理技术操作，由于医学的特殊性和患者的个体差异性，在操作过程中或后期。有可能出现以下情况:</string>
+    <string name="newly_increased">新 &#160;&#160;增</string>
+    <string name="hint_select">有数据未选择,请检查!</string>
+    <string name="No_Open">此功能暂未开放</string>
+</resources>

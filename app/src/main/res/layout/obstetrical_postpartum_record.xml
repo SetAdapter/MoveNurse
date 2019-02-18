@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="#ff8193"
+              android:orientation="horizontal">
+
+    <TextView
+            style="@style/recordTitle"
+            android:layout_width="150dp"
+            android:text="日期"/>
+
+    <include layout="@layout/item_line_vertical"/>
+
+    <TextView
+            style="@style/recordTitle"
+            android:layout_width="62dp"
+            android:text="时间"/>
+
+    <include layout="@layout/item_line_vertical"/>
+
+    <TextView
+            style="@style/recordTitle"
+            android:layout_width="62dp"
+            android:text="T\n(℃)"/>
+
+    <include layout="@layout/item_line_vertical"/>
+
+    <TextView
+            style="@style/recordTitle"
+            android:layout_width="75dp"
+            android:singleLine="false"
+            android:text="p/HR\n(次/分)"/>
+
+    <include layout="@layout/item_line_vertical"/>
+
+    <TextView
+            style="@style/recordTitle"
+            android:layout_width="75dp"
+            android:singleLine="false"
+            android:text="R\n(次/分)"/>
+
+    <include layout="@layout/item_line_vertical"/>
+    <TextView
+            style="@style/recordTitle"
+            android:layout_width="75dp"
+            android:singleLine="false"
+            android:text="BP\n(mmHg)"/>
+
+    <include layout="@layout/item_line_vertical"/>
+    <TextView
+            style="@style/recordTitle"
+            android:layout_width="75dp"
+            android:singleLine="false"
+            android:text="SpO₂\n(%)"/>
+
+    <include layout="@layout/item_line_vertical"/>
+
+    <TextView
+            style="@style/recordTitle"
+            android:layout_width="100dp"
+            android:text="子宫收缩"/>
+
+    <include layout="@layout/item_line_vertical"/>
+
+    <TextView
+            style="@style/recordTitle"
+            android:layout_width="100dp"
+            android:singleLine="false"
+            android:text="宫底高度\n(U=Fb)"/>
+
+    <include layout="@layout/item_line_vertical"/>
+
+    <TextView
+            style="@style/recordTitle"
+            android:layout_width="100dp"
+            android:text="恶露性状"/>
+
+    <include layout="@layout/item_line_vertical"/>
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TextView
+                style="@style/recordTitle"
+                android:layout_width="200dp"
+                android:text="乳房情况"/>
+
+        <include layout="@layout/item_line"/>
+
+        <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    style="@style/recordTitle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="乳房"/>
+
+            <include layout="@layout/item_line_vertical"/>
+
+            <TextView
+                    style="@style/recordTitle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="泌乳"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/item_line_vertical"/>
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TextView
+                style="@style/recordTitle"
+                android:layout_width="200dp"
+                android:text="人"/>
+
+        <include layout="@layout/item_line"/>
+
+        <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    style="@style/recordTitle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="项目"/>
+
+            <include layout="@layout/item_line_vertical"/>
+
+            <TextView
+                    style="@style/recordTitle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="量"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/item_line_vertical"/>
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TextView
+                style="@style/recordTitle"
+                android:layout_width="200dp"
+                android:text="出"/>
+
+        <include layout="@layout/item_line"/>
+
+        <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    style="@style/recordTitle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="项目"/>
+
+            <include layout="@layout/item_line_vertical"/>
+
+            <TextView
+                    style="@style/recordTitle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="量"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/item_line_vertical"/>
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <include layout="@layout/item_line"/>
+
+        <TextView
+                android:id="@+id/textView5"
+                style="@style/recordTitle"
+                android:layout_width="200dp"
+                android:text="伤口"/>
+
+        <include layout="@layout/item_line"/>
+
+        <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    style="@style/recordTitle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="腹部"/>
+
+            <include layout="@layout/item_line_vertical"/>
+
+            <TextView
+                    style="@style/recordTitle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="会阴"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/item_line_vertical"/>
+
+    <TextView
+            style="@style/recordTitle"
+            android:layout_width="100dp"
+            android:text="尿管"/>
+
+    <include layout="@layout/item_line_vertical"/>
+
+    <TextView
+            style="@style/recordTitle"
+            android:layout_width="100dp"
+            android:text="肛门排气"/>
+
+    <include layout="@layout/item_line_vertical"/>
+
+    <TextView
+            android:id="@+id/tvMeasures"
+            style="@style/recordTitle"
+            android:layout_width="300dp"
+            android:text="特殊情况记录"/>
+
+    <include layout="@layout/item_line_vertical"/>
+
+    <TextView
+            style="@style/recordTitle"
+            android:layout_width="125dp"
+            android:text="护士签名"/>
+
+    <include layout="@layout/item_line_vertical"/>
+
+</LinearLayout>

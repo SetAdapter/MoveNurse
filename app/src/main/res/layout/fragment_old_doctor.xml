@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingBottom="8dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="8dp">
+
+        <TextView
+            android:id="@+id/tvDateSelect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_gray_frame_transparent_bg"
+            android:drawableRight="@mipmap/more"
+            android:gravity="center_vertical"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:text="2017年08月30日"
+            android:textColor="@color/myTxtColor"
+            android:textSize="@dimen/textSize_medium_small" />
+
+        <TextView
+            android:id="@+id/tvTimeSelect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:background="@drawable/shape_gray_frame_transparent_bg"
+            android:drawablePadding="4dp"
+            android:drawableRight="@mipmap/more"
+            android:gravity="center_vertical"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:text="16:32"
+            android:textColor="@color/myTxtColor"
+            android:textSize="@dimen/textSize_medium_small" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="至"
+            android:textColor="@color/app_pink_color"
+            android:textSize="@dimen/textSize_medium_small" />
+
+        <TextView
+            android:id="@+id/tvEndDateSelect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_gray_frame_transparent_bg"
+            android:drawableRight="@mipmap/more"
+            android:gravity="center_vertical"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:text="2017年08月30日"
+            android:textColor="@color/myTxtColor"
+            android:textSize="@dimen/textSize_medium_small" />
+
+        <TextView
+            android:id="@+id/tvEndTimeSelect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:background="@drawable/shape_gray_frame_transparent_bg"
+            android:drawableRight="@mipmap/more"
+            android:gravity="center_vertical"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:text="16:32"
+            android:textColor="@color/myTxtColor"
+            android:textSize="@dimen/textSize_medium_small" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:id="@+id/llDoctorDetailed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:background="@drawable/shape_gray_frame_transparent_bg"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:id="@+id/tvClassification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已校对已执行"
+                android:textColor="@color/yesdecline"
+                android:textSize="@dimen/textSize_medium_small" />
+
+            <ImageView
+                android:id="@+id/imgDropDown"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="4dp"
+                android:src="@mipmap/more"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <include layout="@layout/item_old_doctor_title" />
+            <com.fy.custom.swiperefreshlayout.SwipyRefreshLayout
+                android:id="@+id/swipyRefreshLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvOldDoctor"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </com.fy.custom.swiperefreshlayout.SwipyRefreshLayout>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+</LinearLayout>

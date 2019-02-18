@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="40dp">
+
+        <TextView
+            android:id="@+id/tvDate"
+            style="@style/recordTitle"
+            android:layout_width="120dp"
+            android:text="退费日期"
+            android:textColor="@color/myTxtLight" />
+
+        <include layout="@layout/item_line_vertical" />
+
+        <TextView
+            android:id="@+id/projectName"
+            style="@style/recordTitle"
+            android:layout_width="200dp"
+            android:text="项目名称"
+            android:textColor="@color/myTxtLight" />
+
+        <include layout="@layout/item_line_vertical" />
+
+        <TextView
+            android:id="@+id/tvTemperature"
+            style="@style/recordTitle"
+            android:layout_width="90dp"
+            android:text="单位"
+            android:textColor="@color/myTxtLight" />
+
+        <include layout="@layout/item_line_vertical" />
+
+        <TextView
+            android:id="@+id/tvNumber"
+            style="@style/recordTitle"
+            android:layout_width="90dp"
+            android:text="数量"
+            android:textColor="@color/myTxtLight" />
+
+        <include layout="@layout/item_line_vertical" />
+
+        <TextView
+            android:id="@+id/tvPrice"
+            style="@style/recordTitle"
+            android:layout_width="140dp"
+            android:text="标准价格"
+            android:textColor="@color/myTxtLight" />
+
+        <include layout="@layout/item_line_vertical" />
+
+        <TextView
+            android:id="@+id/tvSpecifications"
+            style="@style/recordTitle"
+            android:layout_width="140dp"
+            android:text="规格"
+            android:textColor="@color/myTxtLight" />
+
+        <include layout="@layout/item_line_vertical" />
+
+        <TextView
+            android:id="@+id/tvValuationTime"
+            style="@style/recordTitle"
+            android:layout_width="140dp"
+            android:text="计价时间"
+            android:textColor="@color/myTxtLight" />
+
+        <include layout="@layout/item_line_vertical" />
+
+        <TextView
+            android:id="@+id/tvMainSequence"
+            style="@style/recordTitle"
+            android:layout_width="140dp"
+            android:text="主序"
+            android:textColor="@color/myTxtLight" />
+
+        <include layout="@layout/item_line_vertical" />
+
+        <TextView
+            android:id="@+id/tvSubSequence"
+            style="@style/recordTitle"
+            android:layout_width="140dp"
+            android:text="子序号"
+            android:textColor="@color/myTxtLight" />
+
+        <include layout="@layout/item_line_vertical" />
+
+        <TextView
+            android:id="@+id/tvBatchNumber"
+            style="@style/recordTitle"
+            android:layout_width="140dp"
+            android:text="批号"
+            android:textColor="@color/myTxtLight" />
+
+        <include layout="@layout/item_line_vertical" />
+
+        <TextView
+            android:id="@+id/tvRetailPrice"
+            style="@style/recordTitle"
+            android:layout_width="140dp"
+            android:text="零售价"
+            android:textColor="@color/myTxtLight" />
+
+        <include layout="@layout/item_line_vertical" />
+
+        <TextView
+            android:id="@+id/tvBillingDoctor"
+            style="@style/recordTitle"
+            android:layout_width="140dp"
+            android:text="开单医生"
+            android:textColor="@color/myTxtLight" />
+
+        <include layout="@layout/item_line_vertical" />
+
+        <TextView
+            android:id="@+id/tvPrescriptionTypes"
+            style="@style/recordTitle"
+            android:layout_width="140dp"
+            android:text="处方类型"
+            android:textColor="@color/myTxtLight" />
+
+        <include layout="@layout/item_line_vertical" />
+
+        <TextView
+            android:id="@+id/tvPrescriptionNumber"
+            style="@style/recordTitle"
+            android:layout_width="140dp"
+            android:text="处方号"
+            android:textColor="@color/myTxtLight" />
+
+        <include layout="@layout/item_line_vertical" />
+
+        <TextView
+            android:id="@+id/tvVender"
+            style="@style/recordTitle"
+            android:layout_width="140dp"
+            android:text="厂家"
+            android:textColor="@color/myTxtLight" />
+
+        <include layout="@layout/item_line_vertical" />
+
+        <TextView
+            android:id="@+id/fNumber"
+            style="@style/recordTitle"
+            android:layout_width="140dp"
+            android:text="金额"
+            android:textColor="@color/myTxtLight" />
+
+        <include layout="@layout/item_line_vertical" />
+
+        <TextView
+            android:id="@+id/feeAmount"
+            style="@style/recordTitle"
+            android:layout_width="140dp"
+            android:text="自费金额"
+            android:textColor="@color/myTxtLight" />
+
+        <include layout="@layout/item_line_vertical" />
+
+        <TextView
+            android:id="@+id/orderDepName"
+            style="@style/recordTitle"
+            android:layout_width="110dp"
+            android:text="开单科室"
+            android:textColor="@color/myTxtLight" />
+
+        <include layout="@layout/item_line_vertical" />
+
+        <TextView
+            android:id="@+id/executiveDepName"
+            style="@style/recordTitle"
+            android:layout_width="110dp"
+            android:text="执行科室"
+            android:textColor="@color/myTxtLight" />
+
+        <include layout="@layout/item_line_vertical" />
+
+
+        <TextView
+            android:id="@+id/patID"
+            style="@style/recordTitle"
+            android:layout_width="110dp"
+            android:text="住院号"
+            android:textColor="@color/myTxtLight" />
+
+        <include layout="@layout/item_line_vertical" />
+
+        <TextView
+            android:id="@+id/costName"
+            style="@style/recordTitle"
+            android:layout_width="120dp"
+            android:text="项目分类"
+            android:textColor="@color/myTxtLight" />
+
+        <include layout="@layout/item_line_vertical" />
+    </LinearLayout>
+
+
+</LinearLayout>

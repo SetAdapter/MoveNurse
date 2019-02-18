@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="5">
+
+            <FrameLayout
+                android:layout_width="250dp"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/edit_search"
+                    android:layout_width="250dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="12dp"
+                    android:background="@drawable/search_title"
+                    android:drawableLeft="@mipmap/search_icon"
+                    android:drawablePadding="4dp"
+                    android:hint="患者搜索"
+                    android:imeOptions="actionSearch"
+                    android:singleLine="true"
+                    android:textColor="#999999"
+                    android:textSize="13dp" />
+
+                <Button
+                    android:id="@+id/clear"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="10dp"
+                    android:background="@mipmap/x"
+                    android:visibility="invisible" />
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/Ll_patient"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+            <TextView
+                    android:id="@+id/tv_screen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="6dp"
+                    android:gravity="center"
+                    android:textSize="18dp"
+                    android:textColor="@color/common_text2"
+                    android:text="筛选功能"/>
+
+            <ImageView
+                    android:id="@+id/imgPopDropDown"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/spacing_medium_small"
+                    android:src="@mipmap/icon_mores"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/relativeLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:drawableLeft="@mipmap/superfine"
+                    android:drawablePadding="6dp"
+                    android:gravity="center"
+                    android:text="特级护理"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:drawableLeft="@mipmap/yiji"
+                    android:drawablePadding="6dp"
+                    android:gravity="center"
+                    android:text="一级护理"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:drawableLeft="@mipmap/erji"
+                    android:drawablePadding="6dp"
+                    android:gravity="center"
+                    android:text="二级护理"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:drawableLeft="@mipmap/sanji"
+                    android:drawablePadding="6dp"
+                    android:gravity="center"
+                    android:text="三级护理"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.fy.custom.swiperefreshlayout.SwipyRefreshLayout
+            android:id="@+id/shop_scrollview_list"
+            android:layout_above="@+id/shoplistdi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <GridView
+                android:id="@+id/grid_patient"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:listSelector="@android:color/transparent"
+                android:numColumns="4"
+                android:padding="8dp"
+                android:scrollbars="none"
+                android:horizontalSpacing="24dp"
+                android:verticalSpacing="24dp"/>
+    </com.fy.custom.swiperefreshlayout.SwipyRefreshLayout>
+
+</LinearLayout>

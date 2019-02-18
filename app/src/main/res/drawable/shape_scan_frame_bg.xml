@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 扫描二维码 区域背景框 -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--<corners android:radius="@dimen/shape_radius3"/>-->
+
+    <padding
+        android:bottom="10dp"
+        android:left="@dimen/shape_radius3"
+        android:right="@dimen/shape_radius3"
+        android:top="10dp" />
+
+    <stroke
+        android:width="5dp"
+        android:color="@color/scaning"/>
+
+    <solid android:color="@android:color/transparent"/>
+
+</shape>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingBottom="8dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="日期："
+            android:textColor="@color/myTxtColor"
+            android:textSize="@dimen/textSize_medium" />
+
+        <TextView
+            android:id="@+id/tvDateSelect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_gray_frame_transparent_bg"
+            android:drawablePadding="4dp"
+            android:drawableRight="@mipmap/more"
+            android:gravity="center_vertical"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:textColor="@color/myTxtColor"
+            android:textSize="@dimen/textSize_medium" />
+
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/header_exlist" />
+
+            <com.bigkoo.pickerview.view.XListView
+                android:id="@+id/rvDailyList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+</LinearLayout>

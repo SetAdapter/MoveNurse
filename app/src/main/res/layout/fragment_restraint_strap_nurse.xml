@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvDepart"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:scrollbars="none"/>
+
+            <CheckBox
+                    android:id="@+id/cb_health"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="全选"
+                    android:textSize="@dimen/textSize_medium_small"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                android:weightSum="10">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:weightSum="10">
+
+                <TextView
+                        android:id="@+id/tv_CreateDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="30dp"
+                        android:text="患者、家属签名: "
+                        android:textSize="@dimen/textSize_medium"/>
+
+                <ImageView
+                        android:id="@+id/relation_iv"
+                        android:layout_width="258dp"
+                        android:layout_height="135dp"
+                        android:background="@drawable/edittext_bg"
+                        android:textColor="@color/common_text3"
+                        android:textSize="18sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    android:weightSum="10"
+                    android:baselineAligned="false">
+
+                <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="10"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="wrap_content"
+                        android:baselineAligned="false">
+
+                    <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:id="@+id/tv_conttel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="30dp"
+                                android:text="患者亲属电话:"
+                                android:textSize="@dimen/textSize_medium"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/textSize_medium"
+                                android:text="患者与家属关系:"/>
+
+                        <EditText
+                                android:id="@+id/tv_FZ_Nurse"
+                                android:layout_width="150dp"
+                                android:layout_height="30dp"
+                                android:maxLength="6"
+                                android:hint="与患者关系"
+                                android:gravity="center"
+                                android:background="@drawable/edittext_bg"
+                                android:textColor="@color/common_text3"
+                                android:textSize="18sp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    android:weightSum="10"
+                    android:baselineAligned="false">
+
+                <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="10"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="wrap_content"
+                        android:baselineAligned="false">
+
+                    <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:id="@+id/EXENurseName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/textSize_medium"
+                                android:layout_marginLeft="30dp"
+                                android:text="宣教护士:"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:id="@+id/tv_mCreateDate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/textSize_medium"
+                                android:text="签字日期:"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+                android:id="@+id/save_btn"
+                android:layout_width="150dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/login_btn_bg"
+                android:padding="10dp"
+                android:layout_marginBottom="50dp"
+                android:text="保    存"
+                android:textColor="@color/color_main_white"
+                android:textSize="@dimen/textSize_medium"/>
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

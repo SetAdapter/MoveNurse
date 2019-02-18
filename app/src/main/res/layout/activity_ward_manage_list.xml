@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="5">
+
+            <FrameLayout
+                android:layout_width="250dp"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/edit_search"
+                    android:layout_width="250dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="12dp"
+                    android:background="@drawable/search_title"
+                    android:drawableLeft="@mipmap/search_icon"
+                    android:drawablePadding="4dp"
+                    android:hint="患者搜索"
+                    android:imeOptions="actionSearch"
+                    android:singleLine="true"
+                    android:textColor="#999999"
+                    android:textSize="13dp" />
+
+                <Button
+                    android:id="@+id/clear"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="10dp"
+                    android:background="@mipmap/x"
+                    android:visibility="invisible" />
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:gravity="right"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:drawableLeft="@mipmap/icon_leave"
+                android:drawablePadding="6dp"
+                android:gravity="center"
+                android:text="请假"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:drawableLeft="@mipmap/icon_bed"
+                android:drawablePadding="6dp"
+                android:gravity="center"
+                android:text="包床"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/grid_patient"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="12dp"
+        android:background="@color/white"
+        android:horizontalSpacing="10dp"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="4"
+        android:scrollbars="none"
+        android:verticalSpacing="10dp"/>
+</LinearLayout>

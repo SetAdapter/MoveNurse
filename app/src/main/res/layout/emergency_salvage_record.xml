@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="#ff8193"
+              android:orientation="horizontal">
+
+    <TextView
+            style="@style/recordTitle"
+            android:layout_width="150dp"
+            android:text="日期"/>
+
+    <include layout="@layout/item_line_vertical"/>
+
+    <TextView
+            style="@style/recordTitle"
+            android:layout_width="62dp"
+            android:text="时间"/>
+
+    <include layout="@layout/item_line_vertical"/>
+
+    <TextView
+            style="@style/recordTitle"
+            android:layout_width="62dp"
+            android:text="T\n(°C)"/>
+
+    <include layout="@layout/item_line_vertical"/>
+
+    <TextView
+            style="@style/recordTitle"
+            android:layout_width="62dp"
+            android:text="p/HR\n(次/分)"/>
+
+    <include layout="@layout/item_line_vertical"/>
+
+    <TextView
+            style="@style/recordTitle"
+            android:layout_width="75dp"
+            android:text="R\n(次/分)"/>
+
+    <include layout="@layout/item_line_vertical"/>
+
+    <TextView
+            style="@style/recordTitle"
+            android:layout_width="75dp"
+            android:text="BP\n(mmHg)"/>
+
+    <include layout="@layout/item_line_vertical"/>
+
+    <TextView
+            style="@style/recordTitle"
+            android:layout_width="140dp"
+            android:text="意识"/>
+
+    <include layout="@layout/item_line_vertical"/>
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TextView
+                style="@style/recordTitle"
+                android:layout_width="200dp"
+                android:text="入"/>
+
+        <include layout="@layout/item_line"/>
+
+        <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    style="@style/recordTitle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="内容"/>
+
+            <include layout="@layout/item_line_vertical"/>
+
+            <TextView
+                    style="@style/recordTitle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="量"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/item_line_vertical"/>
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TextView
+                style="@style/recordTitle"
+                android:layout_width="200dp"
+                android:text="出"/>
+
+        <include layout="@layout/item_line"/>
+
+        <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    style="@style/recordTitle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="内容"/>
+
+            <include layout="@layout/item_line_vertical"/>
+
+            <TextView
+                    style="@style/recordTitle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="量"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/item_line_vertical"/>
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TextView
+                style="@style/recordTitle"
+                android:layout_width="200dp"
+                android:text="瞳孔左侧"/>
+
+        <include layout="@layout/item_line"/>
+
+        <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    style="@style/recordTitle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="直径(mm)"/>
+
+            <include layout="@layout/item_line_vertical"/>
+
+            <TextView
+                    style="@style/recordTitle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="反射"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/item_line_vertical"/>
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TextView
+                style="@style/recordTitle"
+                android:layout_width="200dp"
+                android:text="瞳孔右侧"/>
+
+        <include layout="@layout/item_line"/>
+
+        <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    style="@style/recordTitle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="直径(mm)"/>
+
+            <include layout="@layout/item_line_vertical"/>
+
+            <TextView
+                    style="@style/recordTitle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="反射"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/item_line_vertical"/>
+
+    <TextView
+            style="@style/recordTitle"
+            android:layout_width="300dp"
+            android:text="病情观察及措施"/>
+
+    <include layout="@layout/item_line_vertical"/>
+
+    <TextView
+            style="@style/recordTitle"
+            android:layout_width="125dp"
+            android:text="护士签名"/>
+
+    <include layout="@layout/item_line_vertical"/>
+
+</LinearLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="5">
+
+            <EditText
+                android:id="@+id/edit_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="12dp"
+                android:background="@drawable/search_title"
+                android:drawableLeft="@mipmap/search_icon"
+                android:drawablePadding="4dp"
+                android:hint="患者搜索"
+                android:imeOptions="actionSearch"
+                android:singleLine="true"
+                android:textColor="#999999"
+                android:textSize="13dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:gravity="right"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:drawableLeft="@mipmap/superfine"
+                android:drawablePadding="6dp"
+                android:gravity="center"
+                android:text="特级护理"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:drawableLeft="@mipmap/yiji"
+                android:drawablePadding="6dp"
+                android:gravity="center"
+                android:text="一级护理"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:drawableLeft="@mipmap/erji"
+                android:drawablePadding="6dp"
+                android:gravity="center"
+                android:text="二级护理"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:drawableLeft="@mipmap/sanji"
+                android:drawablePadding="6dp"
+                android:gravity="center"
+                android:text="三级护理"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvDoctor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"/>
+</LinearLayout>

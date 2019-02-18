@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.fy.widget.CheckableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    android:orientation="horizontal">
+
+    <CheckBox
+        android:id="@+id/tvSourceName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:duplicateParentState="true"
+        android:button="@null"
+        android:gravity="center"
+        android:padding="10dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:singleLine="true"
+        android:text="add"
+        android:textSize="@dimen/textSize_small" />
+</com.fy.widget.CheckableLayout>

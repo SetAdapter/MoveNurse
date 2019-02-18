@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 失败 右上角圆弧 背景 -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners
+        android:bottomLeftRadius="0dp"
+        android:bottomRightRadius="0dp"
+        android:topLeftRadius="0dp"
+        android:topRightRadius="@dimen/shape_radius3"/>
+
+    <padding
+        android:bottom="10dp"
+        android:left="@dimen/shape_radius3"
+        android:right="@dimen/shape_radius3"
+        android:top="10dp"
+        />
+
+    <stroke
+        android:width="@dimen/itemSplit_line"
+        android:color="@color/scaning"/>
+
+    <solid android:color="@color/white"/>
+</shape>

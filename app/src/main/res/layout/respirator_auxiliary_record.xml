@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="#ff8193"
+              android:orientation="horizontal">
+
+    <TextView
+            style="@style/recordTitle"
+            android:layout_width="150dp"
+            android:text="日期"/>
+
+    <include layout="@layout/item_line_vertical"/>
+
+    <TextView
+            style="@style/recordTitle"
+            android:layout_width="62dp"
+            android:text="时间"/>
+
+    <include layout="@layout/item_line_vertical"/>
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TextView
+                style="@style/recordTitle"
+                android:layout_width="800dp"
+                android:text="呼吸机参数"/>
+
+        <include layout="@layout/item_line"/>
+
+        <LinearLayout
+                android:layout_width="800dp"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    style="@style/recordTitle"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:text="通气模式"/>
+
+            <include layout="@layout/item_line_vertical"/>
+
+            <TextView
+                    style="@style/recordTitle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="FiO2(%)"/>
+
+            <include layout="@layout/item_line_vertical"/>
+
+            <TextView
+                    style="@style/recordTitle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="RR(次/分)"/>
+
+            <include layout="@layout/item_line_vertical"/>
+
+            <TextView
+                    style="@style/recordTitle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="PIP(cmH2O)"/>
+
+            <include layout="@layout/item_line_vertical"/>
+
+            <TextView
+                    style="@style/recordTitle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="PEEP(cmH2O)"/>
+
+            <include layout="@layout/item_line_vertical"/>
+
+            <TextView
+                    style="@style/recordTitle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="I:E"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/item_line_vertical"/>
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TextView
+                style="@style/recordTitle"
+                android:layout_width="1000dp"
+                android:text="血气分析"/>
+
+        <include layout="@layout/item_line"/>
+
+        <LinearLayout
+                android:layout_width="1000dp"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    style="@style/recordTitle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="SaO₂(%)"/>
+
+            <include layout="@layout/item_line_vertical"/>
+
+            <TextView
+                    style="@style/recordTitle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="PH"/>
+
+            <include layout="@layout/item_line_vertical"/>
+
+            <TextView
+                    style="@style/recordTitle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="PCO₂(mmHg)"/>
+
+            <include layout="@layout/item_line_vertical"/>
+
+            <TextView
+                    style="@style/recordTitle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="PO₂(mmHg)"/>
+
+            <include layout="@layout/item_line_vertical"/>
+
+            <TextView
+                    style="@style/recordTitle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="HCO3(mmol/L)"/>
+            <include layout="@layout/item_line_vertical"/>
+
+            <TextView
+                    style="@style/recordTitle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="BE(B)(mmol/L)"/>
+            <include layout="@layout/item_line_vertical"/>
+
+            <TextView
+                    style="@style/recordTitle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="乳酸(%)"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <include layout="@layout/item_line_vertical"/>
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TextView
+                style="@style/recordTitle"
+                android:layout_width="400dp"
+                android:text="其他"/>
+
+        <include layout="@layout/item_line"/>
+
+        <LinearLayout
+                android:layout_width="400dp"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    style="@style/recordTitle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="气管导管型号"/>
+
+            <include layout="@layout/item_line_vertical"/>
+
+            <TextView
+                    style="@style/recordTitle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="气导管插入深度(cm)"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <include layout="@layout/item_line_vertical"/>
+
+    <TextView
+            style="@style/recordTitle"
+            android:layout_width="125dp"
+            android:text="护士签名"/>
+
+    <include layout="@layout/item_line_vertical"/>
+
+</LinearLayout>

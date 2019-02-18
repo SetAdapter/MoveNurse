@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="260dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/edit_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="12dp"
+                android:background="@drawable/search_titles"
+                android:drawableLeft="@mipmap/search_icon"
+                android:drawablePadding="4dp"
+                android:hint="根据项目名称、医嘱主序搜索"
+                android:imeOptions="actionSearch"
+                android:singleLine="true"
+                android:textColor="#999999"
+                android:textSize="13dp" />
+
+            <ImageView
+                android:visibility="invisible"
+                android:id="@+id/clear"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="20dp"
+                android:background="@mipmap/x" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/header_query" />
+
+            <com.bigkoo.pickerview.view.XListView
+                android:id="@+id/list_item"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none" />
+        </LinearLayout>
+    </HorizontalScrollView>
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <Button
+                    android:id="@+id/bt_compile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:gravity="right|center_vertical"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/newly_increased"
+                    android:textColor="@color/app_pink_color"
+                    android:textSize="@dimen/big_font_size"
+                    tools:ignore="RtlHardcoded"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <com.fy.custom.swiperefreshlayout.SwipyRefreshLayout
+                    android:id="@+id/swipe_refresh_widget"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rvDepart"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="none"/>
+            </com.fy.custom.swiperefreshlayout.SwipyRefreshLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

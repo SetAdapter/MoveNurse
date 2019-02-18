@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <RelativeLayout
+        android:id="@+id/capture_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent">
+
+        <FrameLayout
+            android:id="@+id/capture_preview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"/>
+
+        <ImageView
+            android:id="@+id/capture_mask_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/shape_translucent_bg"
+            android:paddingTop="50dp"
+            android:src="@mipmap/scan_top_icon"/>
+
+        <RelativeLayout
+            android:id="@+id/capture_crop_view"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/capture_mask_top"
+            android:background="@android:color/transparent"
+            android:layout_centerHorizontal="true" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/shape_scan_frame_bg">
+
+                <ImageView
+                    android:id="@+id/capture_scan_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/shape_scan_line"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/capture_crop_view"
+            android:background="@drawable/shape_translucent_bg"/>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/capture_crop_view"
+            android:layout_alignTop="@id/capture_crop_view"
+            android:layout_toLeftOf="@id/capture_crop_view"
+            android:background="@drawable/shape_translucent_bg"/>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/capture_crop_view"
+            android:layout_alignTop="@id/capture_crop_view"
+            android:layout_toRightOf="@id/capture_crop_view"
+            android:background="@drawable/shape_translucent_bg"/>
+
+        <TextView
+            android:id="@+id/capture_scan_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/capture_crop_view"
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:text="请将二维码/条码放入框内，即可自动扫描"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textSize_medium_small"/>
+
+        <TextView
+            android:id="@+id/tvInIdNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/capture_scan_result"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/shape_in_translucent_bg"
+            android:drawableLeft="@mipmap/manual"
+            android:drawablePadding="4dp"
+            android:gravity="center_vertical"
+            android:text="手动输入ID号"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_medium"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/capture_restart_scan"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="#66ffcc00"
+        android:gravity="center"
+        android:text="重置扫描"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/textSize_medium_small"
+        android:visibility="invisible"/>
+
+</RelativeLayout>

@@ -1,0 +1,903 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="40dp"
+            android:orientation="vertical">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:baselineAligned="false">
+
+                <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="10">
+
+                        <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:padding="10dp"
+                                android:text="入院日期:"
+                                android:textColor="@color/color_main_string"
+                                android:textSize="@dimen/textSize_medium_small"/>
+
+                        <TextView
+                                android:id="@+id/tvHospitalDate"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="8"
+                                android:textSize="@dimen/textSize_medium"/>
+
+                    </LinearLayout>
+
+                    <include layout="@layout/item_line"/>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="10">
+
+                        <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:padding="10dp"
+                                android:text="入院诊断:"
+                                android:textColor="@color/color_main_string"
+                                android:textSize="@dimen/textSize_medium_small"/>
+
+                        <TextView
+                                android:id="@+id/tvAdmissionDiagnosis"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="8"
+                                android:textSize="@dimen/textSize_medium"/>
+                    </LinearLayout>
+
+                    <include layout="@layout/item_line"/>
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:id="@+id/tv_nationality"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+                                android:background="@color/app_pink_color"
+                                android:gravity="center"
+                                android:text="呼吸机参数"
+                                android:textColor="@color/app_color_white"
+                                android:textSize="@dimen/textSize_medium_small"/>
+
+                    </LinearLayout>
+
+                    <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1px"
+                            android:background="@color/lineColor"/>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                        <android.support.v7.widget.RecyclerView
+                                android:id="@+id/rvDepart"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:scrollbars="none"/>
+
+                    </LinearLayout>
+
+                    <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1px"
+                            android:background="@color/lineColor"/>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="10">
+
+                        <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:padding="10dp"
+                                android:text="FIO₂:"
+                                android:textColor="@color/color_main_string"
+                                android:textSize="@dimen/textSize_medium_small"/>
+
+                        <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="2"
+                                android:baselineAligned="false">
+
+                            <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1">
+
+                                <EditText
+                                        android:id="@+id/FiO2"
+                                        android:layout_width="62dp"
+                                        android:layout_height="30dp"
+                                        android:maxLength="6"
+                                        android:gravity="center"
+                                        android:inputType="number|numberDecimal"
+                                        android:background="@drawable/edittext_bg"
+                                        android:textColor="@color/common_text3"
+                                        android:textSize="@dimen/textSize_medium_small"/>
+
+                                <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingLeft="@dimen/spacing_small_much"
+                                        android:text="%"
+                                        android:textSize="@dimen/textSize_medium_small"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <include layout="@layout/item_line"/>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="10">
+
+                        <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:padding="10dp"
+                                android:text="RR:"
+                                android:textColor="@color/color_main_string"
+                                android:textSize="@dimen/textSize_medium_small"/>
+
+                        <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="2"
+                                android:baselineAligned="false">
+
+                            <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1">
+
+                                <EditText
+                                        android:id="@+id/RR"
+                                        android:layout_width="62dp"
+                                        android:layout_height="30dp"
+                                        android:maxLength="6"
+                                        android:gravity="center"
+                                        android:inputType="number|numberDecimal"
+                                        android:background="@drawable/edittext_bg"
+                                        android:textColor="@color/common_text3"
+                                        android:textSize="@dimen/textSize_medium_small"/>
+
+                                <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingLeft="@dimen/spacing_small_much"
+                                        android:text="次/分"
+                                        android:textSize="@dimen/textSize_medium_small"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <include layout="@layout/item_line"/>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="10">
+
+                        <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:padding="10dp"
+                                android:text="PIP:"
+                                android:textColor="@color/color_main_string"
+                                android:textSize="@dimen/textSize_medium_small"/>
+
+                        <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="2"
+                                android:baselineAligned="false">
+
+                            <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1">
+
+                                <EditText
+                                        android:id="@+id/PIP"
+                                        android:layout_width="62dp"
+                                        android:layout_height="30dp"
+                                        android:maxLength="6"
+                                        android:gravity="center"
+                                        android:inputType="number|numberDecimal"
+                                        android:background="@drawable/edittext_bg"
+                                        android:textColor="@color/common_text3"
+                                        android:textSize="@dimen/textSize_medium_small"/>
+
+                                <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingLeft="@dimen/spacing_small_much"
+                                        android:text="cmH2O"
+                                        android:textSize="@dimen/textSize_medium_small"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <include layout="@layout/item_line"/>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="10">
+
+                        <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:padding="10dp"
+                                android:text="PEEP:"
+                                android:textColor="@color/color_main_string"
+                                android:textSize="@dimen/textSize_medium_small"/>
+
+                        <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="2"
+                                android:baselineAligned="false">
+
+                            <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1">
+
+                                <EditText
+                                        android:id="@+id/PEEP"
+                                        android:layout_width="62dp"
+                                        android:layout_height="30dp"
+                                        android:maxLength="6"
+                                        android:gravity="center"
+                                        android:inputType="number|numberDecimal"
+                                        android:background="@drawable/edittext_bg"
+                                        android:textColor="@color/common_text3"
+                                        android:textSize="@dimen/textSize_medium_small"/>
+
+                                <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingLeft="@dimen/spacing_small_much"
+                                        android:text="cmH2O"
+                                        android:textSize="@dimen/textSize_medium_small"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <include layout="@layout/item_line"/>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="10">
+
+                        <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:padding="10dp"
+                                android:text="I:E:"
+                                android:textColor="@color/color_main_string"
+                                android:textSize="@dimen/textSize_medium_small"/>
+
+                        <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="2"
+                                android:baselineAligned="false">
+
+                            <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1">
+
+                                <EditText
+                                        android:id="@+id/IE"
+                                        android:layout_width="62dp"
+                                        android:layout_height="30dp"
+                                        android:maxLength="6"
+                                        android:gravity="center"
+                                        android:digits="0123456789.:"
+                                        android:background="@drawable/edittext_bg"
+                                        android:textColor="@color/common_text3"
+                                        android:textSize="@dimen/textSize_medium_small"/>
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <include layout="@layout/item_line"/>
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/app_pink_color"
+                                android:padding="10dp"
+                                android:text="血气分析"
+                                android:textColor="@color/app_color_white"
+                                android:textSize="@dimen/textSize_medium_small"/>
+
+                    </LinearLayout>
+
+                    <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1px"
+                            android:background="@color/lineColor"/>
+
+                    <include layout="@layout/item_line"/>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="10">
+
+                        <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:padding="10dp"
+                                android:text="SaO₂:"
+                                android:textColor="@color/color_main_string"
+                                android:textSize="@dimen/textSize_medium_small"/>
+
+                        <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="2"
+                                android:baselineAligned="false">
+
+                            <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1">
+
+                                <EditText
+                                        android:id="@+id/SaO2"
+                                        android:layout_width="62dp"
+                                        android:layout_height="30dp"
+                                        android:maxLength="6"
+                                        android:gravity="center"
+                                        android:inputType="number|numberDecimal"
+                                        android:background="@drawable/edittext_bg"
+                                        android:textColor="@color/common_text3"
+                                        android:textSize="@dimen/textSize_medium_small"/>
+
+                                <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingLeft="@dimen/spacing_small_much"
+                                        android:text="%"
+                                        android:textSize="@dimen/textSize_medium_small"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <include layout="@layout/item_line"/>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="10">
+
+                        <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:padding="10dp"
+                                android:text="PH:"
+                                android:textColor="@color/color_main_string"
+                                android:textSize="@dimen/textSize_medium_small"/>
+
+                        <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="2"
+                                android:baselineAligned="false">
+
+                            <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1">
+
+                                <EditText
+                                        android:id="@+id/PH"
+                                        android:layout_width="62dp"
+                                        android:layout_height="30dp"
+                                        android:maxLength="6"
+                                        android:gravity="center"
+                                        android:inputType="number|numberDecimal"
+                                        android:background="@drawable/edittext_bg"
+                                        android:textColor="@color/common_text3"
+                                        android:textSize="@dimen/textSize_medium_small"/>
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <include layout="@layout/item_line"/>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="10">
+
+                        <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:padding="10dp"
+                                android:text="PO₂:"
+                                android:textColor="@color/color_main_string"
+                                android:textSize="@dimen/textSize_medium_small"/>
+
+                        <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="2"
+                                android:baselineAligned="false">
+
+                            <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1">
+
+                                <EditText
+                                        android:id="@+id/PO2"
+                                        android:layout_width="62dp"
+                                        android:layout_height="30dp"
+                                        android:maxLength="6"
+                                        android:gravity="center"
+                                        android:inputType="number|numberDecimal"
+                                        android:background="@drawable/edittext_bg"
+                                        android:textColor="@color/common_text3"
+                                        android:textSize="@dimen/textSize_medium_small"/>
+
+                                <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingLeft="@dimen/spacing_small_much"
+                                        android:text="mmHg"
+                                        android:textSize="@dimen/textSize_medium_small"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <include layout="@layout/item_line"/>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="10">
+
+                        <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:padding="10dp"
+                                android:text="PCO₂:"
+                                android:textColor="@color/color_main_string"
+                                android:textSize="@dimen/textSize_medium_small"/>
+
+                        <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="2"
+                                tools:ignore="TooManyViews"
+                                android:baselineAligned="false">
+
+                            <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1">
+
+                                <EditText
+                                        android:id="@+id/PCO2"
+                                        android:layout_width="62dp"
+                                        android:layout_height="30dp"
+                                        android:maxLength="6"
+                                        android:gravity="center"
+                                        android:inputType="number|numberDecimal"
+                                        android:background="@drawable/edittext_bg"
+                                        android:textColor="@color/common_text3"
+                                        android:textSize="@dimen/textSize_medium_small"/>
+
+                                <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingLeft="@dimen/spacing_small_much"
+                                        android:text="mmHg"
+                                        android:textSize="@dimen/textSize_medium_small"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <include layout="@layout/item_line"/>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="10">
+
+                        <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:padding="10dp"
+                                android:text="HCO3:"
+                                android:textColor="@color/color_main_string"
+                                android:textSize="@dimen/textSize_medium_small"/>
+
+                        <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="2"
+                                android:baselineAligned="false">
+
+                            <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1">
+
+                                <EditText
+                                        android:id="@+id/HCO2"
+                                        android:layout_width="62dp"
+                                        android:layout_height="30dp"
+                                        android:maxLength="6"
+                                        android:gravity="center"
+                                        android:inputType="number|numberDecimal"
+                                        android:background="@drawable/edittext_bg"
+                                        android:textColor="@color/common_text3"
+                                        android:textSize="@dimen/textSize_medium_small"/>
+
+                                <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingLeft="@dimen/spacing_small_much"
+                                        android:text="mmol/L"
+                                        android:textSize="@dimen/textSize_medium_small"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <include layout="@layout/item_line"/>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="10">
+
+                        <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:padding="10dp"
+                                android:text="BE(B):"
+                                android:textColor="@color/color_main_string"
+                                android:textSize="@dimen/textSize_medium_small"/>
+
+                        <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="2"
+                                android:baselineAligned="false">
+
+                            <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1">
+
+                                <EditText
+                                        android:id="@+id/BE"
+                                        android:layout_width="62dp"
+                                        android:layout_height="30dp"
+                                        android:maxLength="6"
+                                        android:gravity="center"
+                                        android:inputType="number|numberDecimal"
+                                        android:background="@drawable/edittext_bg"
+                                        android:textColor="@color/common_text3"
+                                        android:textSize="@dimen/textSize_medium_small"/>
+
+                                <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingLeft="@dimen/spacing_small_much"
+                                        android:text="mmol"
+                                        android:textSize="@dimen/textSize_medium_small"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <include layout="@layout/item_line"/>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="10">
+
+                        <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:padding="10dp"
+                                android:maxLength="6"
+                                android:inputType="number|numberDecimal"
+                                android:text="乳酸:"
+                                android:textColor="@color/color_main_string"
+                                android:textSize="@dimen/textSize_medium_small"/>
+
+                        <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="2"
+                                android:baselineAligned="false">
+
+                            <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1">
+
+                                <EditText
+                                        android:id="@+id/LacticAcid"
+                                        android:layout_width="62dp"
+                                        android:layout_height="30dp"
+                                        android:gravity="center"
+                                        android:inputType="number|numberDecimal"
+                                        android:background="@drawable/edittext_bg"
+                                        android:textColor="@color/common_text3"
+                                        android:textSize="@dimen/textSize_medium_small"/>
+
+                                <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingLeft="@dimen/spacing_small_much"
+                                        android:text="%"
+                                        android:textSize="@dimen/textSize_medium_small"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/app_pink_color"
+                                android:padding="10dp"
+                                android:text="其他"
+                                android:textColor="@color/app_color_white"
+                                android:textSize="@dimen/textSize_medium_small"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="10">
+
+                        <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:padding="10dp"
+                                android:text="气管导管型号:"
+                                android:textColor="@color/color_main_string"
+                                android:textSize="@dimen/textSize_medium_small"/>
+
+                        <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="2"
+                                android:baselineAligned="false">
+
+                            <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1">
+
+                                <EditText
+                                        android:id="@+id/TCType"
+                                        android:layout_width="62dp"
+                                        android:layout_height="30dp"
+                                        android:maxLength="6"
+                                        android:gravity="center"
+                                        android:inputType="number|numberDecimal"
+                                        android:background="@drawable/edittext_bg"
+                                        android:textColor="@color/common_text3"
+                                        android:textSize="@dimen/textSize_medium_small"/>
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <include layout="@layout/item_line"/>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="10">
+
+                        <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:padding="10dp"
+                                android:text="导管插入深度:"
+                                android:textColor="@color/color_main_string"
+                                android:textSize="@dimen/textSize_medium_small"/>
+
+                        <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="2"
+                                android:baselineAligned="false">
+
+                            <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1">
+
+                                <EditText
+                                        android:id="@+id/TCDepth"
+                                        android:layout_width="62dp"
+                                        android:layout_height="30dp"
+                                        android:maxLength="6"
+                                        android:gravity="center"
+                                        android:inputType="number|numberDecimal"
+                                        android:background="@drawable/edittext_bg"
+                                        android:textColor="@color/common_text3"
+                                        android:textSize="@dimen/textSize_medium_small"/>
+
+                                <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingLeft="@dimen/spacing_small_much"
+                                        android:text="cm"
+                                        android:textSize="@dimen/textSize_medium_small"/>
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <include layout="@layout/item_line"/>
+
+
+                    <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="40dp">
+
+                        <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="10dp">
+
+                            <TextView
+                                    android:id="@+id/ExecutiveNurse"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="护士签名:"
+                                    android:textColor="@color/color_main_string"
+                                    android:textSize="@dimen/textSize_medium_small"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                                android:visibility="gone"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:orientation="horizontal"
+                                android:padding="10dp">
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="质控护士签名:"
+                                    android:textColor="@color/color_main_string"
+                                    android:textSize="@dimen/textSize_medium_small"/>
+
+                            <EditText
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/textSize_medium_small"
+                                    android:visibility="invisible"/>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@android:drawable/ic_menu_recent_history"
+            app:backgroundTint="@color/drug_select"/>
+    <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/login_btn_bg"
+            android:gravity="center"
+            android:text="保   存"
+            android:textColor="@color/common_color_white"
+            android:textSize="@dimen/textSize_medium_small"/>
+
+</RelativeLayout>

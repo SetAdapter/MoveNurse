@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/contentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/liner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"/>
+
+    <ImageView
+        android:id="@+id/loadImg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/loddingbg"
+        android:scaleType="fitXY"
+        android:visibility="gone" />
+
+</android.support.design.widget.CoordinatorLayout>

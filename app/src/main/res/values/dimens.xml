@@ -1,0 +1,11 @@
+<resources>
+    <!-- 字体大小  -->
+    <dimen name="extra_extra_large_font_size">30sp</dimen>
+    <dimen name="extra_large_font_size">20sp</dimen>
+    <dimen name="large_font_size">18sp</dimen>
+    <dimen name="big_font_size">16sp</dimen>
+    <dimen name="middle_font_size">14sp</dimen>
+    <dimen name="small_font_size">12sp</dimen>
+    <dimen name="mini_font_size">11sp</dimen>
+    <dimen name="micro_font_size">10sp</dimen>
+</resources>

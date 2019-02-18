@@ -1,0 +1,37 @@
+-- Merging decision tree log ---
+manifest
+ADDED from F:\Adnroid\MoveNurse\pickerview\src\main\AndroidManifest.xml:1:1-5:12
+INJECTED from F:\Adnroid\MoveNurse\pickerview\src\main\AndroidManifest.xml:1:1-5:12
+INJECTED from F:\Adnroid\MoveNurse\pickerview\src\main\AndroidManifest.xml:1:1-5:12
+INJECTED from F:\Adnroid\MoveNurse\pickerview\src\main\AndroidManifest.xml:1:1-5:12
+INJECTED from F:\Adnroid\MoveNurse\pickerview\src\main\AndroidManifest.xml:1:1-5:12
+INJECTED from F:\Adnroid\MoveNurse\pickerview\src\main\AndroidManifest.xml:1:1-5:12
+INJECTED from F:\Adnroid\MoveNurse\pickerview\src\main\AndroidManifest.xml:1:1-5:12
+	package
+		ADDED from F:\Adnroid\MoveNurse\pickerview\src\main\AndroidManifest.xml:2:9-40
+		INJECTED from F:\Adnroid\MoveNurse\pickerview\src\main\AndroidManifest.xml
+		INJECTED from F:\Adnroid\MoveNurse\pickerview\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from F:\Adnroid\MoveNurse\pickerview\src\main\AndroidManifest.xml
+		ADDED from F:\Adnroid\MoveNurse\pickerview\src\main\AndroidManifest.xml:1:1-5:12
+		INJECTED from F:\Adnroid\MoveNurse\pickerview\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from F:\Adnroid\MoveNurse\pickerview\src\main\AndroidManifest.xml:1:1-5:12
+	android:versionCode
+		INJECTED from F:\Adnroid\MoveNurse\pickerview\src\main\AndroidManifest.xml
+		ADDED from F:\Adnroid\MoveNurse\pickerview\src\main\AndroidManifest.xml:1:1-5:12
+		INJECTED from F:\Adnroid\MoveNurse\pickerview\src\main\AndroidManifest.xml
+uses-sdk
+INJECTED from F:\Adnroid\MoveNurse\pickerview\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from F:\Adnroid\MoveNurse\pickerview\src\main\AndroidManifest.xml
+INJECTED from F:\Adnroid\MoveNurse\pickerview\src\main\AndroidManifest.xml
+INJECTED from F:\Adnroid\MoveNurse\pickerview\src\main\AndroidManifest.xml
+INJECTED from F:\Adnroid\MoveNurse\pickerview\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from F:\Adnroid\MoveNurse\pickerview\src\main\AndroidManifest.xml
+		ADDED from F:\Adnroid\MoveNurse\pickerview\src\main\AndroidManifest.xml
+		INJECTED from F:\Adnroid\MoveNurse\pickerview\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from F:\Adnroid\MoveNurse\pickerview\src\main\AndroidManifest.xml
+		ADDED from F:\Adnroid\MoveNurse\pickerview\src\main\AndroidManifest.xml
+		INJECTED from F:\Adnroid\MoveNurse\pickerview\src\main\AndroidManifest.xml

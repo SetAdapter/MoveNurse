@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 医嘱管理 item 主体背景 图形 -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <corners
+        android:bottomLeftRadius="@dimen/shape_radius3"
+        android:bottomRightRadius="@dimen/shape_radius3"
+        android:topLeftRadius="0dp"
+        android:topRightRadius="0dp"/>
+
+    <padding
+        android:bottom="10dp"
+        android:left="@dimen/shape_radius3"
+        android:right="@dimen/shape_radius3"
+        android:top="10dp" />
+
+    <solid android:color="@color/white"/>
+
+</shape>

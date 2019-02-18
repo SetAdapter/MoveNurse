@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_main_bg"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            <TextView
+                    android:id="@+id/tv_patient_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="病人ID"
+                    android:textColor="@color/myTxtColor"
+                    android:textSize="18dp" />
+
+            <TextView
+                    android:id="@+id/tv_area"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="病区"
+                    android:textColor="@color/myTxtColor"
+                    android:textSize="18dp" />
+            <TextView
+                    android:id="@+id/tv_dept"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="科室"
+                    android:textColor="@color/myTxtColor"
+                    android:textSize="18dp" />
+
+            <TextView
+                    android:id="@+id/tv_bed_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="床号"
+                    android:textColor="@color/myTxtColor"
+                    android:textSize="18dp" />
+
+            <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="姓名"
+                    android:textColor="@color/myTxtColor"
+                    android:textSize="18dp" />
+
+            <TextView
+                    android:id="@+id/tv_sex"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="性别"
+                    android:textColor="@color/myTxtColor"
+                    android:textSize="18dp" />
+
+            <TextView
+                    android:id="@+id/tv_age"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="年龄"
+                    android:textColor="@color/myTxtColor"
+                    android:textSize="18dp" />
+
+            <TextView
+                    android:id="@+id/tv_hospital_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="住院号"
+                    android:textColor="@color/myTxtColor"
+                    android:textSize="18dp" />
+
+            <TextView
+                    android:id="@+id/tv_marriage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="婚姻"
+                    android:textColor="@color/myTxtColor"
+                    android:textSize="18dp" />
+
+            <TextView
+                    android:id="@+id/tv_profession"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="职业"
+                    android:textColor="@color/myTxtColor"
+                    android:textSize="18dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

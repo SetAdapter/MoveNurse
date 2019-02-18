@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/color_main_bg"
+            android:orientation="horizontal">
+
+        <TextView
+                android:id="@+id/tvSelectLabel"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:background="@mipmap/selected"
+                android:gravity="center"
+                android:padding="@dimen/spacing_small"
+                android:text="病区退药"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_medium"/>
+
+        <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvNursingLabel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2.5"/>
+
+        <!--    <LinearLayout
+                android:id="@+id/drug"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="30dp">
+
+                <TextView
+                    android:id="@+id/drug_orders"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="药物医嘱用药  |"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/dispose_orders"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:text="  处置医嘱用药"
+                    android:textSize="18dp" />
+            </LinearLayout>-->
+
+        <LinearLayout
+                android:id="@+id/beg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="30dp"
+                >
+
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="费用类型:"
+                    android:textSize="18dp"/>
+
+            <Spinner
+                    android:id="@+id/cost_type"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    style="@style/costType"
+                    android:textSize="18dp"/>
+
+            <TextView
+                    android:visibility="gone"
+                    android:layout_width="20dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@mipmap/more"/>
+        </LinearLayout>
+        <!--    <LinearLayout
+                android:id="@+id/all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="30dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="费用类型:"
+                    android:textSize="18dp" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="全部"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@mipmap/more" />
+            </LinearLayout>-->
+
+
+    </LinearLayout>
+
+    <include layout="@layout/item_line"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+
+        <FrameLayout
+                android:id="@+id/fmPatientInfo"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"/>
+
+        <include layout="@layout/item_line_vertical"/>
+
+        <FrameLayout
+                android:id="@+id/fmContent"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="8"/>
+    </LinearLayout>
+
+</LinearLayout>
+

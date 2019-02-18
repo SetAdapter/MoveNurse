@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- <p/>Created by fangs on . -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@mipmap/gou" android:state_checked="true"/>
+
+    <item android:drawable="@mipmap/gou" android:state_pressed="true"/>
+
+    <item android:drawable="@mipmap/select"/>
+
+</selector>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="8dp">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="入院日期："
+                android:textColor="@color/myTxtColor"
+                android:textSize="@dimen/textSize_medium"/>
+
+        <TextView
+                android:id="@+id/tvHospitalizationDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:text="2017年8月2日"
+                android:textColor="@color/myTxtColor"
+                android:textSize="@dimen/textSize_medium"/>
+    </LinearLayout>
+
+    <include layout="@layout/item_line"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="8dp">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="入院诊断："
+                android:textColor="@color/myTxtColor"
+                android:textSize="@dimen/textSize_medium"/>
+
+        <TextView
+                android:id="@+id/tvDiagnosticDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:text="诊断详情"
+                android:textColor="@color/myTxtColor"
+                android:textSize="@dimen/textSize_medium"/>
+    </LinearLayout>
+
+    <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:scrollbars="none">
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <include layout="@layout/emergency_salvage_record" />
+
+            <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvObstetricalRecord"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="8dp">
+
+        <TextView
+                android:id="@+id/tvQCclerk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/myTxtColor"
+                android:textSize="@dimen/textSize_medium"
+                android:visibility="invisible"
+                android:text="质控护士签名："/>
+
+        <TextView
+                android:id="@+id/tvEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_medium_small"
+                android:layout_marginLeft="@dimen/spacing_medium_small"
+                android:layout_below="@id/tvQCclerk"
+                android:layout_toRightOf="@id/tvQCclerk"
+                android:background="@drawable/login_btn_bg"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_medium"
+                android:text="@string/newly_increased"/>
+    </RelativeLayout>
+</LinearLayout>

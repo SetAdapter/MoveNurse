@@ -1,0 +1,604 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:baselineAligned="false">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="5"
+                android:background="@mipmap/background_01"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:padding="50dp">
+
+                <TextView
+                    android:id="@+id/tv_hospital_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="住院号"
+                    android:textColor="@color/myTxtColor"
+                    android:textSize="20dp"/>
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="姓名"
+                    android:textColor="@color/myTxtColor"
+                    android:textSize="20dp"/>
+
+                <TextView
+                    android:id="@+id/tv_sex"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="性别"
+                    android:textColor="@color/myTxtColor"
+                    android:textSize="20dp"/>
+
+                <TextView
+                    android:id="@+id/tv_age"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="年龄"
+                    android:textColor="@color/myTxtColor"
+                    android:textSize="20dp"/>
+
+                <TextView
+                    android:id="@+id/tv_num_genre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="证件类别"
+                    android:textColor="@color/myTxtColor"
+                    android:textSize="20dp"/>
+
+                <TextView
+                    android:id="@+id/tv_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="证件号码"
+                    android:textColor="@color/myTxtColor"
+                    android:textSize="20dp"/>
+
+                <TextView
+                    android:id="@+id/tv_purpose"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="住院目的"
+                    android:textColor="@color/myTxtColor"
+                    android:textSize="20dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="5"
+                android:background="@mipmap/background_02"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:padding="30dp">
+
+                <TextView
+                    android:id="@+id/tv_nationality"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="民族"
+                    android:textColor="@color/myTxtColor"
+                    android:textSize="20dp"/>
+
+                <TextView
+                    android:id="@+id/tv_Blood"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="血型"
+                    android:textColor="@color/myTxtColor"
+                    android:textSize="20dp"/>
+
+                <TextView
+                    android:id="@+id/tv_isMarried"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="婚姻状态"
+                    android:textColor="@color/myTxtColor"
+                    android:textSize="20dp"/>
+
+                <TextView
+                    android:id="@+id/tv_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="联系电话"
+                    android:textColor="@color/myTxtColor"
+                    android:textSize="20dp"/>
+
+                <TextView
+                    android:id="@+id/tv_Address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="地址"
+                    android:textColor="@color/myTxtColor"
+                    android:textSize="20dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="5"
+                android:background="@mipmap/background_03"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:padding="50dp">
+
+                <TextView
+                    android:id="@+id/tv_ContName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="联系人姓名"
+                    android:textColor="@color/myTxtColor"
+                    android:textSize="20dp"/>
+
+                <TextView
+                    android:id="@+id/tv_ContRelation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="与患者关系"
+                    android:textColor="@color/myTxtColor"
+                    android:textSize="20dp"/>
+
+                <TextView
+                    android:id="@+id/tv_ContTel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="联系人电话"
+                    android:textColor="@color/myTxtColor"
+                    android:textSize="20dp"/>
+
+                <TextView
+                    android:id="@+id/tv_ContAddr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="联系人地址"
+                    android:textColor="@color/myTxtColor"
+                    android:textSize="20dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="5"
+                android:background="@mipmap/background_04"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:padding="50dp">
+
+                <TextView
+                    android:id="@+id/tv_Fee_Sour_Type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:text="费用来源"
+                    android:textColor="@color/myTxtColor"
+                    android:textSize="20dp"/>
+
+                <TextView
+                    android:id="@+id/tv_Fee_Sour_Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="费用名称"
+                    android:textColor="@color/myTxtColor"
+                    android:textSize="20dp"/>
+
+                <TextView
+                    android:id="@+id/tv_MedicareType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="医保类别"
+                    android:textColor="@color/myTxtColor"
+                    android:textSize="20dp"/>
+
+                <TextView
+                    android:id="@+id/tv_MedicareNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="医保号码"
+                    android:textColor="@color/myTxtColor"
+                    android:textSize="20dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@mipmap/background_05"
+                    android:orientation="horizontal"
+                    android:baselineAligned="false">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="5"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:padding="120dp">
+
+                    <TextView
+                        android:id="@+id/tv_In_Dept_Name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center|left"
+                        android:text="入院科室名称"
+                        android:textColor="@color/myTxtColor"
+                        android:textSize="20dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_In_Dept_ID"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center|left"
+                        android:text="入院科室代码"
+                        android:textColor="@color/myTxtColor"
+                        android:textSize="20dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_In_Type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center|left"
+                        android:text="入院方式"
+                        android:textColor="@color/myTxtColor"
+                        android:textSize="20dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_In_Date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center|left"
+                        android:text="入院日期"
+                        android:textColor="@color/myTxtColor"
+                        android:textSize="20dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="5"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:padding="50dp">
+
+                    <TextView
+                        android:id="@+id/tv_In_Room"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center|left"
+                        android:text="入院病房"
+                        android:textColor="@color/myTxtColor"
+                        android:textSize="20dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_In_Bed"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center|left"
+                        android:text="入院床位"
+                        android:textColor="@color/myTxtColor"
+                        android:textSize="20dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_ICD_Name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center|left"
+                        android:text="入院诊断名称"
+                        android:textColor="@color/myTxtColor"
+                        android:textSize="20dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_ICD"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center|left"
+                        android:text="入院诊断代码"
+                        android:textColor="@color/myTxtColor"
+                        android:textSize="20dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:baselineAligned="false">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="5"
+                    android:background="@mipmap/background_03"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:padding="50dp">
+
+                    <TextView
+                        android:id="@+id/tv_Attend_PSID"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="主治医师工号"
+                        android:textColor="@color/myTxtColor"
+                        android:textSize="20dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_Attend_PSName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="主治医师姓名"
+                        android:textColor="@color/myTxtColor"
+                        android:textSize="20dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_DoctorIn_PSID"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="住院医师工号"
+                        android:textColor="@color/myTxtColor"
+                        android:textSize="20dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_DoctorIn_PSName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="住院医师姓名"
+                        android:textColor="@color/myTxtColor"
+                        android:textSize="20dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="5"
+                    android:background="@mipmap/background_01"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:padding="50dp">
+
+                    <TextView
+                        android:id="@+id/tv_Pri_NurseID"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="责任护士工号"
+                        android:textColor="@color/myTxtColor"
+                        android:textSize="20dp"/>
+
+
+                    <TextView
+                        android:id="@+id/tv_Pri_NurseName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="责任护士姓名"
+                        android:textColor="@color/myTxtColor"
+                        android:textSize="20dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_Day_Type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="护理级别"
+                        android:textColor="@color/myTxtColor"
+                        android:textSize="20dp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/color_main_white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:baselineAligned="false">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="5"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:padding="50dp">
+
+                <TextView
+                    android:id="@+id/tv_IsSick"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center|left"
+                    android:text="是否随诊"
+                    android:textColor="@color/myTxtColor"
+                    android:textSize="20dp"/>
+
+                <TextView
+                    android:id="@+id/tv_Allergy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center|left"
+                    android:text="药物过敏"
+                    android:textColor="@color/myTxtColor"
+                    android:textSize="20dp"/>
+
+                <TextView
+                    android:id="@+id/tv_illness"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center|left"
+                    android:text="病情状态"
+                    android:textColor="@color/myTxtColor"
+                    android:textSize="20dp"/>
+
+                <TextView
+                    android:id="@+id/tv_reception"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center|left"
+                    android:text="接诊日期"
+                    android:textColor="@color/myTxtColor"
+                    android:textSize="20dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="5"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:padding="50dp">
+
+                <TextView
+                    android:id="@+id/tv_IsMedicare"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center|left"
+                    android:text="是否医保"
+                    android:textColor="@color/myTxtColor"
+                    android:textSize="20dp"/>
+
+                <TextView
+                    android:id="@+id/tv_Prepay_Banalce"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center|left"
+                    android:text="预交金"
+                    android:textColor="@color/myTxtColor"
+                    android:textSize="20dp"/>
+
+                <TextView
+                    android:id="@+id/tv_Total_Fee"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center|left"
+                    android:text="总费用"
+                    android:textColor="@color/myTxtColor"
+                    android:textSize="20dp"/>
+
+                <TextView
+                    android:id="@+id/tv_Status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center|left"
+                    android:text="状态"
+                    android:textColor="@color/myTxtColor"
+                    android:textSize="20dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="1dp">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <LinearLayout
+                android:id="@+id/Ll_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="10">
+
+            <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:padding="10dp"
+                    android:text="宫颈质:"
+                    android:textColor="@color/color_main_string"
+                    android:textSize="@dimen/textSize_medium_small"/>
+
+            <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="8">
+
+                <android.support.v7.widget.RecyclerView
+                        android:id="@+id/lv_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:overScrollMode="never"
+                        android:scrollbars="none"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

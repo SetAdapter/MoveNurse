@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="#ababab">
+
+        <TextView
+            android:id="@+id/tvAdmissionTimes"
+            style="@style/recordTitle"
+            android:layout_width="120dp"
+            android:textColor="@color/white" />
+
+        <include layout="@layout/item_line_vertical" />
+
+        <TextView
+            android:id="@+id/tvSerialNumber"
+            style="@style/recordTitle"
+            android:layout_width="90dp"
+            android:textColor="@color/white" />
+
+        <include layout="@layout/item_line_vertical" />
+
+        <TextView
+            android:id="@+id/tvCostType"
+            style="@style/recordTitle"
+            android:layout_width="90dp"
+            android:textColor="@color/white" />
+
+        <include layout="@layout/item_line_vertical" />
+
+
+        <TextView
+            android:id="@+id/tvStandard"
+            style="@style/recordTitle"
+            android:layout_width="90dp"
+            android:textColor="@color/white" />
+
+        <include layout="@layout/item_line_vertical" />
+
+        <TextView
+            android:id="@+id/tvCompany"
+            style="@style/recordTitle"
+            android:layout_width="90dp"
+            android:textColor="@color/white" />
+
+        <include layout="@layout/item_line_vertical" />
+
+        <TextView
+            android:id="@+id/tvNumber"
+            style="@style/recordTitle"
+            android:layout_width="90dp"
+            android:text="数量"
+            android:textColor="@color/white" />
+
+        <include layout="@layout/item_line_vertical" />
+
+        <TextView
+            android:id="@+id/tvUnitPrice"
+            style="@style/recordTitle"
+            android:layout_width="90dp"
+            android:textColor="@color/white" />
+
+        <include layout="@layout/item_line_vertical" />
+
+
+        <TextView
+            android:id="@+id/tvMoney"
+            style="@style/recordTitle"
+            android:layout_width="140dp"
+            android:text="金额"
+            android:textColor="@color/white" />
+
+        <include layout="@layout/item_line_vertical" />
+
+        <TextView
+            android:id="@+id/tvExDepartment"
+            style="@style/recordTitle"
+            android:layout_width="140dp"
+            android:textColor="@color/white" />
+
+        <include layout="@layout/item_line_vertical" />
+
+        <TextView
+            android:id="@+id/tvDiscount"
+            style="@style/recordTitle"
+            android:layout_width="120dp"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tvMedicalInsurance"
+            style="@style/recordTitle"
+            android:layout_width="120dp"
+            android:textColor="@color/white" />
+
+        <include layout="@layout/item_line_vertical" />
+
+        <TextView
+            android:id="@+id/tvPreSum"
+            style="@style/recordTitle"
+            android:layout_width="120dp"
+            android:text="处方金额"
+            android:textColor="@color/white" />
+
+        <include layout="@layout/item_line_vertical" />
+
+        <TextView
+            android:id="@+id/tvTreatAmount"
+            style="@style/recordTitle"
+            android:layout_width="120dp"
+            android:text="治疗金额"
+            android:textColor="@color/white" />
+
+        <include layout="@layout/item_line_vertical" />
+
+        <TextView
+            android:id="@+id/tvPayAmount"
+            style="@style/recordTitle"
+            android:layout_width="120dp"
+            android:text="支付金额"
+            android:textColor="@color/white" />
+
+        <include layout="@layout/item_line_vertical" />
+
+        <TextView
+            android:id="@+id/tvMark"
+            style="@style/recordTitle"
+            android:layout_width="120dp"
+            android:text="合计"
+            android:textColor="@color/white" />
+
+        <include layout="@layout/item_line_vertical" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

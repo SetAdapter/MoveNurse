@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.fy.widget.CheckableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+
+    <CheckBox
+        android:id="@+id/tvBedId"
+        android:layout_width="80dp"
+        android:layout_height="90dp"
+        android:background="@drawable/select_shape_bg"
+        android:duplicateParentState="true"
+        android:button="@null"
+        android:gravity="center"
+        android:padding="10dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="@color/select_color"
+        android:textSize="@dimen/textSize_medium_small" />
+
+</com.fy.widget.CheckableLayout>

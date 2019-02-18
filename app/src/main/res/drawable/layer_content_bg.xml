@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- <p/>Created by fangs on . -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape>
+            <corners
+                android:bottomLeftRadius="@dimen/shape_radius3"
+                android:bottomRightRadius="@dimen/shape_radius3"
+                android:topLeftRadius="0dp"
+                android:topRightRadius="0dp"/>
+
+            <solid android:color="#4Ddcdcdc"/>
+        </shape>
+
+    </item>
+
+    <item
+        android:bottom="4dp"
+        android:right="3dp"
+        android:drawable="@drawable/shape_content_bg"/>
+
+
+</layer-list>

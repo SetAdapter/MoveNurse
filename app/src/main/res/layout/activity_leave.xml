@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_main_bg"
+    android:paddingLeft="12dp">
+
+    <TextView
+        android:id="@+id/tvPackBedIcon"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:drawableLeft="@mipmap/icon_bed"
+        android:drawablePadding="6dp"
+        android:gravity="center"
+        android:text="包床"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:drawableLeft="@mipmap/icon_leave"
+        android:drawablePadding="6dp"
+        android:gravity="center"
+        android:text="请假"
+        app:layout_constraintRight_toLeftOf="@id/tvPackBedIcon"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/lineColor"
+        app:layout_constraintBottom_toTopOf="@+id/llPatientInfo" />
+
+    <LinearLayout
+        android:id="@+id/llPatientInfo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintHorizontal_weight="3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/fmWardManage"
+        app:layout_constraintTop_toBottomOf="@id/tvPackBedIcon">
+
+        <TextView
+            android:id="@+id/tv_patient_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="住  院  ID："
+            android:textColor="@color/myTxtColor"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="姓  名     ："
+            android:textColor="@color/myTxtColor"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/tvSex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="性  别     ："
+            android:textColor="@color/myTxtColor"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/tvDepartment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:text="当前科室："
+            android:textColor="@color/myTxtColor"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/tvSelectPackBed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:text="当前床位："
+            android:textColor="@color/myTxtColor"
+            android:textSize="18dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical"
+            android:text="病床状态："
+            android:textColor="@color/myTxtColor"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="0dp"
+        android:background="@color/lineColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/llPatientInfo"
+        app:layout_constraintTop_toBottomOf="@id/tvPackBedIcon" />
+
+    <android.support.v4.widget.Space
+        android:id="@id/fmWardManage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_weight="7"
+        app:layout_constraintLeft_toRightOf="@id/llPatientInfo"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvPackBedIcon"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <RadioGroup
+        android:id="@+id/rgStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/llPatientInfo"
+        app:layout_constraintTop_toBottomOf="@id/llPatientInfo">
+
+        <RadioButton
+            android:id="@+id/rbtnDisease"
+            style="@style/followupRadioBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="患者在院" />
+
+        <RadioButton
+            android:id="@+id/rbtnLeave"
+            style="@style/followupRadioBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="请假" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/login_btn_bg"
+        android:text="保存"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:layout_constraintLeft_toLeftOf="@+id/llPatientInfo"
+        app:layout_constraintRight_toRightOf="@+id/llPatientInfo"
+        app:layout_constraintTop_toBottomOf="@id/rgStatus" />
+
+</android.support.constraint.ConstraintLayout>

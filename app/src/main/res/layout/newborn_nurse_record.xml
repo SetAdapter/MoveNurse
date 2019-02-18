@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/button_normal"
+              android:orientation="horizontal">
+
+
+    <TextView
+            style="@style/recordTitle"
+            android:layout_width="150dp"
+            android:text="日期"/>
+
+    <include layout="@layout/item_line_vertical"/>
+
+    <TextView
+            style="@style/recordTitle"
+            android:layout_width="62dp"
+            android:text="时间"/>
+
+    <include layout="@layout/item_line_vertical"/>
+
+    <TextView
+            style="@style/recordTitle"
+            android:layout_width="62dp"
+            android:text="T\n(°C)"/>
+
+    <include layout="@layout/item_line_vertical"/>
+
+    <TextView
+            style="@style/recordTitle"
+            android:layout_width="62dp"
+            android:text="反应"/>
+
+    <include layout="@layout/item_line_vertical"/>
+
+    <TextView
+            style="@style/recordTitle"
+            android:layout_width="80dp"
+            android:text="哭声"/>
+
+    <include layout="@layout/item_line_vertical"/>
+
+    <TextView
+            style="@style/recordTitle"
+            android:layout_width="80dp"
+            android:text="吸吮力"/>
+
+    <include layout="@layout/item_line_vertical"/>
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TextView
+                style="@style/recordTitle"
+                android:layout_width="300dp"
+                android:text="喂养"/>
+
+        <include layout="@layout/item_line"/>
+
+        <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    style="@style/recordTitle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="方式"/>
+
+            <include layout="@layout/item_line_vertical"/>
+
+            <TextView
+                    style="@style/recordTitle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="种类"/>
+
+            <include layout="@layout/item_line_vertical"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/item_line_vertical"/>
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TextView
+                style="@style/recordTitle"
+                android:layout_width="300dp"
+                android:text="吸氧"/>
+
+        <include layout="@layout/item_line"/>
+
+        <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    style="@style/recordTitle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="方式"/>
+
+            <include layout="@layout/item_line_vertical"/>
+
+            <TextView
+                    style="@style/recordTitle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="流量(L/min)"/>
+
+            <include layout="@layout/item_line_vertical"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/item_line_vertical"/>
+
+    <TextView
+            style="@style/recordTitle"
+            android:layout_width="100dp"
+            android:text="皮肤颜色"/>
+
+    <include layout="@layout/item_line_vertical"/>
+
+    <TextView
+            style="@style/recordTitle"
+            android:layout_width="100dp"
+            android:text="脐部情况"/>
+
+    <include layout="@layout/item_line_vertical"/>
+
+    <TextView
+            style="@style/recordTitle"
+            android:layout_width="100dp"
+            android:text="呕吐"/>
+
+    <include layout="@layout/item_line_vertical"/>
+
+    <TextView
+            style="@style/recordTitle"
+            android:layout_width="100dp"
+            android:text="大便情况"/>
+
+    <include layout="@layout/item_line_vertical"/>
+
+    <TextView
+            style="@style/recordTitle"
+            android:layout_width="100dp"
+            android:text="小便情况"/>
+
+    <include layout="@layout/item_line_vertical"/>
+
+    <TextView
+            style="@style/recordTitle"
+            android:layout_width="300dp"
+            android:text="特殊情况记录"/>
+
+    <include layout="@layout/item_line_vertical"/>
+
+    <TextView
+            style="@style/recordTitle"
+            android:layout_width="125dp"
+            android:text="护士签名"/>
+
+    <include layout="@layout/item_line_vertical"/>
+
+</LinearLayout>

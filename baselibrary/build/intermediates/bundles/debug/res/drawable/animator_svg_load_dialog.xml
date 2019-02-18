@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?><!-- <p/>Created by fangs on . -->
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:drawable="@drawable/vector_load_svg"
+    tools:targetApi="lollipop" >
+
+    <target
+        android:name="animgroupLoadDialog"
+        android:animation="@animator/attribute_load_dialog" />
+
+    <target
+        android:name="tailgasOne"
+        android:animation="@animator/attribute_load_dialog2" />
+
+    <target
+        android:name="tailgasTwo"
+        android:animation="@animator/attribute_load_dialog2" />
+
+    <target
+        android:name="tailgasThree"
+        android:animation="@animator/attribute_load_dialog2" />
+
+    <target
+        android:name="tailgasFour"
+        android:animation="@animator/attribute_load_dialog2" />
+
+    <target
+        android:name="tailgasFive"
+        android:animation="@animator/attribute_load_dialog2" />
+
+    <target
+        android:name="tailgas1"
+        android:animation="@animator/attribute_load_dialog3" />
+    <target
+        android:name="tailgas2"
+        android:animation="@animator/attribute_load_dialog3" />
+    <target
+        android:name="tailgas3"
+        android:animation="@animator/attribute_load_dialog3" />
+    <target
+        android:name="tailgas4"
+        android:animation="@animator/attribute_load_dialog3" />
+    <target
+        android:name="tailgas5"
+        android:animation="@animator/attribute_load_dialog3" />
+    <target
+        android:name="tailgas6"
+        android:animation="@animator/attribute_load_dialog3" />
+
+</animated-vector>

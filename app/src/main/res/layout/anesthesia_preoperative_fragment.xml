@@ -1,0 +1,1517 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:baselineAligned="false">
+
+                <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                    <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:layout_width="150dp"
+                                android:layout_height="40dp"
+                                android:text="病人基本情况"
+                                android:gravity="center"
+                                android:background="@color/app_pink_color"
+                                android:textColor="@color/app_color_white"
+                                android:textSize="@dimen/textSize_medium_small"/>
+
+                        <Button
+                                android:id="@+id/bt_compile"
+                                android:layout_width="150dp"
+                                android:layout_height="40dp"
+                                android:text="@string/newly_increased"
+                                android:clickable="true"
+                                android:background="@null"
+                                android:gravity="center"
+                                android:textColor="@color/app_pink_color"
+                                android:textSize="@dimen/textSize_medium_small"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentEnd="true"/>
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="10"
+                            android:baselineAligned="false">
+
+                        <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="2"
+                                android:layout_height="wrap_content">
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="术前诊断:"
+                                    android:textSize="@dimen/textSize_medium_small"
+                                    android:textColor="@color/color_main_string"
+                                    android:padding="10dp"
+                                    />
+                        </LinearLayout>
+
+                        <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="8"
+                                android:layout_height="wrap_content">
+
+                            <TextView
+                                    android:id="@+id/tv_In_Dis"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/textSize_medium_small"
+                                    android:textColor="@color/color_main_string"
+                                    android:padding="10dp"
+                                    />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1px"
+                            android:background="@color/lineColor"/>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="10"
+                            android:baselineAligned="false">
+
+                        <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="2"
+                                android:layout_height="wrap_content">
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="手术日期:"
+                                    android:textSize="@dimen/textSize_medium_small"
+                                    android:textColor="@color/color_main_string"
+                                    android:padding="10dp"
+                                    />
+                        </LinearLayout>
+
+                        <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="8"
+                                android:layout_gravity="center"
+                                android:layout_height="wrap_content">
+
+                            <TextView
+                                    android:id="@+id/operation_date"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/textSize_medium_small"
+                                    android:textColor="@color/color_main_string"
+                                    android:padding="10dp"
+                                    />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1px"
+                            android:background="@color/lineColor"/>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="10"
+                            android:baselineAligned="false">
+
+                        <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="2"
+                                android:layout_height="wrap_content">
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="拟施行手术及方式:"
+                                    android:textSize="@dimen/textSize_medium_small"
+                                    android:textColor="@color/color_main_string"
+                                    android:padding="10dp"
+                                    />
+                        </LinearLayout>
+
+                        <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="3"
+                                android:layout_height="wrap_content">
+
+                            <TextView
+                                    android:id="@+id/ModusOperandi"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/textSize_medium_small"
+                                    android:textColor="@color/color_main_string"
+                                    android:padding="10dp"
+                                    />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1px"
+                            android:background="@color/lineColor"/>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="10"
+                            android:baselineAligned="false">
+
+                        <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="2"
+                                android:layout_height="wrap_content">
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="主诉:"
+                                    android:textSize="@dimen/textSize_medium_small"
+                                    android:textColor="@color/color_main_string"
+                                    android:padding="10dp"
+                                    />
+                        </LinearLayout>
+
+                        <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="8"
+                                android:layout_gravity="center"
+                                android:layout_height="wrap_content">
+
+                            <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@null"
+                                    android:text="见病例"
+                                    android:textSize="@dimen/textSize_medium_small"
+                                    />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1px"
+                            android:background="@color/lineColor"/>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="10"
+                            android:baselineAligned="false">
+
+                        <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="2"
+                                android:layout_height="wrap_content">
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="既往体健:"
+                                    android:textSize="@dimen/textSize_medium_small"
+                                    android:textColor="@color/color_main_string"
+                                    android:padding="10dp"
+                                    />
+                        </LinearLayout>
+
+                        <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="8"
+                                android:layout_height="wrap_content">
+
+                            <TextView
+                                    android:id="@+id/IsHealthy"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/textSize_medium_small"
+                                    android:textColor="@color/color_main_string"
+                                    android:padding="10dp"
+                                    />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1px"
+                            android:background="@color/lineColor"/>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:weightSum="10"
+                            android:baselineAligned="false">
+
+                        <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="2"
+                                android:layout_height="wrap_content">
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="呼吸系统疾病:"
+                                    android:textSize="@dimen/textSize_medium_small"
+                                    android:textColor="@color/color_main_string"
+                                    android:padding="10dp"
+                                    />
+                        </LinearLayout>
+
+                        <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="4"
+                                android:layout_height="wrap_content">
+
+                            <TextView
+                                    android:id="@+id/HasHXSick"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/textSize_medium_small"
+                                    android:textColor="@color/color_main_string"
+                                    android:padding="10dp"
+                                    />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1px"
+                            android:background="@color/lineColor"/>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="10"
+                            android:baselineAligned="false">
+
+                        <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="2"
+                                android:layout_height="wrap_content">
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="手术麻醉史:"
+                                    android:textSize="@dimen/textSize_medium_small"
+                                    android:textColor="@color/color_main_string"
+                                    android:padding="10dp"
+                                    />
+                        </LinearLayout>
+
+                        <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="4"
+                                android:layout_height="wrap_content">
+
+
+                            <TextView
+                                    android:id="@+id/HasAnesthesia"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/textSize_medium_small"
+                                    android:textColor="@color/color_main_string"
+                                    android:padding="10dp"
+                                    />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1px"
+                            android:background="@color/lineColor"/>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="10"
+                            android:baselineAligned="false">
+
+                        <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="2"
+                                android:layout_height="wrap_content">
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="一般情况:"
+                                    android:textSize="@dimen/textSize_medium_small"
+                                    android:textColor="@color/color_main_string"
+                                    android:padding="10dp"
+                                    />
+                        </LinearLayout>
+
+                        <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="8"
+                                android:layout_height="wrap_content">
+
+                            <TextView
+                                    android:id="@+id/VitalSign_T"
+                                    android:textColor="@color/color_main_string"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/textSize_medium_small"
+                                    android:padding="10dp"/>
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1px"
+                            android:background="@color/lineColor"/>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="10"
+                            android:baselineAligned="false">
+
+                        <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="2"
+                                android:layout_height="wrap_content">
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="神志:"
+                                    android:textSize="@dimen/textSize_medium_small"
+                                    android:textColor="@color/color_main_string"
+                                    android:padding="10dp"
+                                    />
+                        </LinearLayout>
+
+                        <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="6"
+                                android:layout_height="wrap_content">
+
+                            <TextView
+                                    android:id="@+id/consciousness"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/textSize_medium_small"
+                                    android:textColor="@color/color_main_string"
+                                    android:padding="10dp"
+                                    />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1px"
+                            android:background="@color/lineColor"/>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="10"
+                            android:baselineAligned="false">
+
+                        <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="2"
+                                android:layout_height="wrap_content">
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="牙齿:"
+                                    android:textSize="@dimen/textSize_medium_small"
+                                    android:textColor="@color/color_main_string"
+                                    android:padding="10dp"
+                                    />
+                        </LinearLayout>
+
+                        <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="6"
+                                android:layout_height="wrap_content">
+
+                            <TextView
+                                    android:id="@+id/toothStatus"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/textSize_medium_small"
+                                    android:textColor="@color/color_main_string"
+                                    android:padding="10dp"
+                                    />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1px"
+                            android:background="@color/lineColor"/>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="10"
+                            android:baselineAligned="false">
+
+                        <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="2"
+                                android:layout_height="wrap_content">
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="心肺腑:"
+                                    android:textSize="@dimen/textSize_medium_small"
+                                    android:textColor="@color/color_main_string"
+                                    android:padding="10dp"
+                                    />
+                        </LinearLayout>
+
+                        <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="6"
+                                android:layout_gravity="center"
+                                android:layout_height="wrap_content">
+
+                            <TextView
+                                    android:id="@+id/XFFStatus"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/textSize_medium_small"
+                                    android:textColor="@color/color_main_string"
+                                    android:padding="10dp"
+                                    />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1px"
+                            android:background="@color/lineColor"/>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="10"
+                            android:baselineAligned="false">
+
+                        <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="2"
+                                android:layout_height="wrap_content">
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="脊柱情况:"
+                                    android:textSize="@dimen/textSize_medium_small"
+                                    android:textColor="@color/color_main_string"
+                                    android:padding="10dp"
+                                    />
+                        </LinearLayout>
+
+                        <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="8"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+
+                            <TextView
+                                    android:id="@+id/VertebraStatus"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/textSize_medium_small"
+                                    android:textColor="@color/color_main_string"
+                                    android:padding="10dp"
+                                    />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1px"
+                            android:background="@color/lineColor"
+                            tools:ignore="TooManyViews"/>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="10"
+                            android:baselineAligned="false">
+
+                        <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="2"
+                                android:layout_height="wrap_content">
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="困难插管:"
+                                    android:textSize="@dimen/textSize_medium_small"
+                                    android:textColor="@color/color_main_string"
+                                    android:padding="10dp"
+                                    />
+                        </LinearLayout>
+
+                        <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="4"
+                                android:layout_height="wrap_content">
+
+                            <TextView
+                                    android:id="@+id/MallampatiGrade"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/textSize_medium_small"
+                                    android:textColor="@color/color_main_string"
+                                    android:padding="10dp"
+                                    />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1px"
+                            android:background="@color/lineColor"/>
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="10"
+                            android:baselineAligned="false">
+
+                        <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="2"
+                                android:layout_height="wrap_content">
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="心功能分级:"
+                                    android:textSize="@dimen/textSize_medium_small"
+                                    android:textColor="@color/color_main_string"
+                                    android:padding="10dp"
+                                    />
+                        </LinearLayout>
+
+                        <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="4"
+                                android:layout_height="wrap_content">
+
+                            <TextView
+                                    android:id="@+id/HeartGrade"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/textSize_medium_small"
+                                    android:textColor="@color/color_main_string"
+                                    android:padding="10dp"
+                                    />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1px"
+                            android:background="@color/lineColor"/>
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:id="@+id/tv_nationality"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:padding="10dp"
+                                android:text="与麻醉相关的辅助检查结果"
+                                android:gravity="center"
+                                android:background="@color/app_pink_color"
+                                android:textColor="@color/app_color_white"
+                                android:textSize="@dimen/textSize_medium_small"/>
+
+                    </LinearLayout>
+
+                    <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1px"
+                            android:background="@color/lineColor"/>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="10"
+                            android:baselineAligned="false">
+
+                        <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="2"
+                                android:layout_height="wrap_content">
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="心电图:"
+                                    android:textSize="@dimen/textSize_medium_small"
+                                    android:textColor="@color/color_main_string"
+                                    android:padding="10dp"
+                                    />
+                        </LinearLayout>
+
+                        <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="8"
+                                android:layout_height="wrap_content">
+
+                            <TextView
+                                    android:id="@+id/ECG"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/textSize_medium_small"
+                                    android:textColor="@color/color_main_string"
+                                    android:padding="10dp"
+                                    />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1px"
+                            android:background="@color/lineColor"/>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="10"
+                            android:baselineAligned="false">
+
+                        <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="2"
+                                android:layout_height="wrap_content">
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="胸片:"
+                                    android:textSize="@dimen/textSize_medium_small"
+                                    android:textColor="@color/color_main_string"
+                                    android:padding="10dp"
+                                    />
+                        </LinearLayout>
+
+                        <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="8"
+                                android:layout_height="wrap_content">
+
+                            <TextView
+                                    android:id="@+id/CXR"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/textSize_medium_small"
+                                    android:textColor="@color/color_main_string"
+                                    android:padding="10dp"
+                                    />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1px"
+                            android:background="@color/lineColor"/>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="10"
+                            android:baselineAligned="false">
+
+                        <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="2"
+                                android:layout_height="wrap_content">
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="肺功能:"
+                                    android:textSize="@dimen/textSize_medium_small"
+                                    android:textColor="@color/color_main_string"
+                                    android:padding="10dp"
+                                    />
+                        </LinearLayout>
+
+                        <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="4"
+                                android:layout_height="wrap_content">
+
+                            <TextView
+                                    android:id="@+id/Lung"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/textSize_medium_small"
+                                    android:textColor="@color/color_main_string"
+                                    android:padding="10dp"
+                                    />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1px"
+                            android:background="@color/lineColor"/>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="10"
+                            android:baselineAligned="false">
+
+                        <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="2"
+                                android:layout_height="wrap_content">
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="血常规:"
+                                    android:textSize="@dimen/textSize_medium_small"
+                                    android:textColor="@color/color_main_string"
+                                    android:padding="10dp"
+                                    />
+                        </LinearLayout>
+
+                        <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="8"
+                                android:layout_height="wrap_content">
+
+                            <TextView
+                                    android:id="@+id/CBC"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/textSize_medium_small"
+                                    android:textColor="@color/color_main_string"
+                                    android:padding="10dp"
+                                    />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1px"
+                            android:background="@color/lineColor"/>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="10"
+                            android:baselineAligned="false">
+
+                        <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="2"
+                                android:layout_height="wrap_content">
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="凝血功能:"
+                                    android:textSize="@dimen/textSize_medium_small"
+                                    android:textColor="@color/color_main_string"
+                                    android:padding="10dp"
+                                    />
+                        </LinearLayout>
+
+                        <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="8"
+                                android:layout_height="wrap_content">
+
+                            <TextView
+                                    android:id="@+id/Coagulation"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/textSize_medium_small"
+                                    android:textColor="@color/color_main_string"
+                                    android:padding="10dp"
+                                    />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1px"
+                            android:background="@color/lineColor"/>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="10"
+                            android:baselineAligned="false">
+
+                        <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="2"
+                                android:layout_height="wrap_content">
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="肝功能:"
+                                    android:textSize="@dimen/textSize_medium_small"
+                                    android:textColor="@color/color_main_string"
+                                    android:padding="10dp"
+                                    />
+                        </LinearLayout>
+
+                        <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="8"
+                                android:layout_height="wrap_content">
+
+
+                            <TextView
+                                    android:id="@+id/LFT"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/textSize_medium_small"
+                                    android:textColor="@color/color_main_string"
+                                    android:padding="10dp"
+                                    />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1px"
+                            android:background="@color/lineColor"/>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="10"
+                            android:baselineAligned="false">
+
+                        <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="2"
+                                android:layout_height="wrap_content">
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="肾功能:"
+                                    android:textSize="@dimen/textSize_medium_small"
+                                    android:textColor="@color/color_main_string"
+                                    android:padding="10dp"
+                                    />
+                        </LinearLayout>
+
+                        <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="8"
+                                android:layout_height="wrap_content">
+
+                            <TextView
+                                    android:id="@+id/Renal"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/textSize_medium_small"
+                                    android:textColor="@color/color_main_string"
+                                    android:padding="10dp"
+                                    />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1px"
+                            android:background="@color/lineColor"/>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="10"
+                            android:baselineAligned="false">
+
+                        <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="2"
+                                android:layout_height="wrap_content">
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="血糖:"
+                                    android:textSize="@dimen/textSize_medium_small"
+                                    android:textColor="@color/color_main_string"
+                                    android:padding="10dp"
+                                    />
+                        </LinearLayout>
+
+                        <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="8"
+                                android:layout_height="wrap_content">
+
+                            <TextView
+                                    android:id="@+id/GLU"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/textSize_medium_small"
+                                    android:textColor="@color/color_main_string"
+                                    android:padding="10dp"
+                                    />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1px"
+                            android:background="@color/lineColor"/>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="10"
+                            android:baselineAligned="false">
+
+                        <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="2"
+                                android:layout_height="wrap_content">
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="其他:"
+                                    android:textSize="@dimen/textSize_medium_small"
+                                    android:textColor="@color/color_main_string"
+                                    android:padding="10dp"
+                                    />
+                        </LinearLayout>
+
+                        <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="8"
+                                android:layout_height="wrap_content">
+
+                            <TextView
+                                    android:id="@+id/OtherEx"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/textSize_medium_small"
+                                    android:textColor="@color/color_main_string"
+                                    android:padding="10dp"
+                                    />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1px"
+                            android:background="@color/lineColor"/>
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:padding="10dp"
+                                android:text="更多"
+                                android:gravity="center"
+                                android:background="@color/app_pink_color"
+                                android:textColor="@color/app_color_white"
+                                android:textSize="@dimen/textSize_medium_small"/>
+
+                    </LinearLayout>
+
+                    <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1px"
+                            android:background="@color/lineColor"/>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="10"
+                            android:baselineAligned="false">
+
+                        <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="2"
+                                android:layout_height="wrap_content">
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="ASA分级:"
+                                    android:textSize="@dimen/textSize_medium_small"
+                                    android:textColor="@color/color_main_string"
+                                    android:padding="10dp"
+                                    />
+                        </LinearLayout>
+
+                        <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="8"
+                                android:layout_height="wrap_content">
+
+                            <TextView
+                                    android:id="@+id/ASA"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/textSize_medium_small"
+                                    android:textColor="@color/color_main_string"
+                                    android:padding="10dp"
+                                    />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1px"
+                            android:background="@color/lineColor"/>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="10"
+                            android:baselineAligned="false">
+
+                        <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="2"
+                                android:layout_height="wrap_content">
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="术前麻醉医嘱:"
+                                    android:textSize="@dimen/textSize_medium_small"
+                                    android:textColor="@color/color_main_string"
+                                    android:padding="10dp"
+                                    />
+                        </LinearLayout>
+
+                        <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="8"
+                                android:orientation="vertical"
+                                android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="(1)术前8小时禁饮禁食;"
+                                        android:textSize="@dimen/textSize_medium_small"
+                                        android:textColor="@color/color_main_string"
+                                        android:padding="10dp"
+                                        />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                <TextView
+                                        android:id="@+id/OrderOther"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="(2)其他"
+                                        android:textSize="@dimen/textSize_medium_small"
+                                        android:textColor="@color/color_main_string"
+                                        android:padding="10dp"
+                                        />
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1px"
+                            android:background="@color/lineColor"/>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="10"
+                            android:baselineAligned="false">
+
+                        <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="2"
+                                android:layout_height="wrap_content">
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="拟行麻醉方式:"
+                                    android:textSize="@dimen/textSize_medium_small"
+                                    android:textColor="@color/color_main_string"
+                                    android:padding="10dp"
+                                    />
+                        </LinearLayout>
+
+                        <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="8"
+                                android:layout_height="wrap_content">
+
+
+                            <TextView
+                                    android:id="@+id/AnesthesiaType"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/textSize_medium_small"
+                                    android:textColor="@color/color_main_string"
+                                    android:padding="10dp"
+                                    />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1px"
+                            android:background="@color/lineColor"/>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="10"
+                            android:baselineAligned="false">
+
+                        <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="2"
+                                android:layout_height="wrap_content">
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="麻醉适应症:"
+                                    android:textSize="@dimen/textSize_medium_small"
+                                    android:textColor="@color/color_main_string"
+                                    android:padding="10dp"
+                                    />
+                        </LinearLayout>
+
+                        <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="8"
+                                android:layout_height="wrap_content">
+
+                            <TextView
+                                    android:id="@+id/AnesthesiaIndication"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/textSize_medium_small"
+                                    android:textColor="@color/color_main_string"
+                                    android:padding="10dp"
+                                    />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1px"
+                            android:background="@color/lineColor"/>
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:padding="10dp"
+                                android:text="麻醉中注意的事项"
+                                android:gravity="center"
+                                android:background="@color/app_pink_color"
+                                android:textColor="@color/app_color_white"
+                                android:textSize="@dimen/textSize_medium_small"/>
+
+                    </LinearLayout>
+
+                    <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1px"
+                            android:background="@color/lineColor"/>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp">
+
+                        <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:orientation="vertical"
+                                android:paddingLeft="130dp"
+                                android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="1.适当麻醉深度;"
+                                        android:textSize="@dimen/textSize_medium_small"
+                                        android:textColor="@color/color_main_string"
+                                        android:padding="10dp"
+                                        />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="2.维持书中呼吸,循环稳定,保证心,脑,肾,等重要器官的供养平衡;"
+                                        android:textSize="@dimen/textSize_medium_small"
+                                        android:textColor="@color/color_main_string"
+                                        android:padding="10dp"
+                                        />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="3.维持术中水,电解质及内环境稳态;"
+                                        android:textSize="@dimen/textSize_medium_small"
+                                        android:textColor="@color/color_main_string"
+                                        android:padding="10dp"
+                                        />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="4.及时纠正各种意外并发症;"
+                                        android:textSize="@dimen/textSize_medium_small"
+                                        android:textColor="@color/color_main_string"
+                                        android:padding="10dp"
+                                        />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                <TextView
+                                        android:id="@+id/AnesthesiaOther"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="5.其他"
+                                        android:textSize="@dimen/textSize_medium_small"
+                                        android:textColor="@color/color_main_string"
+                                        android:padding="10dp"
+                                        />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1px"
+                            android:background="@color/lineColor"/>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginTop="10dp"
+                            android:weightSum="10">
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="130dp"
+                                android:weightSum="10"
+                                android:baselineAligned="false">
+
+                            <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="10"
+                                    android:layout_height="wrap_content"
+                                    android:baselineAligned="false">
+
+                                <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_weight="1"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                    <TextView
+                                            android:id="@+id/tv_CreateDate"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textSize="@dimen/textSize_medium_small"
+                                            android:text="记录时间:"
+                                            tools:ignore="TooDeepLayout"/>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_weight="1"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                    <TextView
+                                            android:id="@+id/tv_FZ_Nurse"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textSize="@dimen/textSize_medium_small"
+                                            android:text="责任护士签名:"/>
+
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone"
+                                android:layout_marginLeft="130dp"
+                                android:weightSum="10"
+                                android:baselineAligned="false">
+
+                            <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="10"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_height="wrap_content"
+                                    android:baselineAligned="false">
+
+                                <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_weight="1"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                    <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textSize="@dimen/textSize_medium_small"
+                                            android:text="审核时间:"/>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_weight="1"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                    <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textSize="@dimen/textSize_medium_small"
+                                            android:text="审核护士签名:"/>
+
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <Button
+                            android:id="@+id/save_btn"
+                            android:layout_width="150dp"
+                            android:layout_height="45dp"
+                            android:padding="10dp"
+                            android:textSize="@dimen/textSize_medium_small"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/login_btn_bg"
+                            android:textColor="@color/color_main_white"
+                            android:text="@string/newly_increased"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

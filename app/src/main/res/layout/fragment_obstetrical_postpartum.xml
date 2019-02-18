@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="40dp"
+            android:orientation="vertical">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="10">
+
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:padding="10dp"
+                        android:text="入院日期:"
+                        android:textColor="@color/color_main_string"
+                        android:textSize="@dimen/big_font_size"/>
+
+                <TextView
+                        android:id="@+id/tvHospitalDate"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"
+                        android:textSize="@dimen/big_font_size"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/item_line"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="10">
+
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:padding="10dp"
+                        android:text="入院诊断:"
+                        android:textColor="@color/color_main_string"
+                        android:textSize="@dimen/big_font_size"/>
+
+                <TextView
+                        android:id="@+id/tvAdmissionDiagnosis"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"
+                        android:textSize="@dimen/big_font_size"/>
+            </LinearLayout>
+
+            <include layout="@layout/item_line"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:weightSum="10">
+
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:padding="10dp"
+                        android:text="生命体征:"
+                        android:textColor="@color/color_main_string"
+                        android:textSize="@dimen/big_font_size"/>
+
+                <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="8"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="T："
+                            android:textSize="@dimen/big_font_size"/>
+
+                    <EditText
+                            android:id="@+id/T_et"
+                            android:layout_width="65dp"
+                            android:layout_height="30dp"
+                            android:maxLength="6"
+                            android:gravity="center"
+                            android:inputType="number|numberDecimal"
+                            android:background="@drawable/edittext_bg"
+                            android:textSize="18sp"/>
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/spacing_small_much"
+                            android:text="°C"
+                            android:textSize="@dimen/big_font_size"/>
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="HR："
+                            android:textSize="@dimen/big_font_size"/>
+
+                    <EditText
+                            android:id="@+id/Hr_et"
+                            android:layout_width="65dp"
+                            android:layout_height="30dp"
+                            android:maxLength="6"
+                            android:gravity="center"
+                            android:inputType="number|numberDecimal"
+                            android:background="@drawable/edittext_bg"
+                            android:textSize="18sp"/>
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/spacing_small_much"
+                            android:text="次/分"
+                            android:textSize="@dimen/big_font_size"/>
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="R："
+                            android:textSize="@dimen/big_font_size"/>
+
+                    <EditText
+                            android:id="@+id/R_et"
+                            android:layout_width="65dp"
+                            android:layout_height="30dp"
+                            android:maxLength="6"
+                            android:gravity="center"
+                            android:inputType="number|numberDecimal"
+                            android:background="@drawable/edittext_bg"
+                            android:textSize="18sp"/>
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="20dp"
+                            android:paddingLeft="@dimen/spacing_small_much"
+                            android:text="次/分"
+                            android:textSize="@dimen/big_font_size"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:weightSum="10">
+
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:padding="10dp"
+                        android:textColor="@color/color_main_string"
+                        android:textSize="@dimen/textSize_medium_small"/>
+
+                <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="8"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="BP："
+                            android:textSize="@dimen/big_font_size"/>
+
+                    <EditText
+                            android:id="@+id/editBp"
+                            android:layout_width="65dp"
+                            android:layout_height="30dp"
+                            android:maxLength="6"
+                            android:gravity="center"
+                            android:inputType="number|numberDecimal"
+                            android:background="@drawable/edittext_bg"
+                            android:textSize="18sp"/>
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/spacing_small_much"
+                            android:paddingRight="@dimen/spacing_small_much"
+                            android:text="/"
+                            android:textSize="@dimen/big_font_size"/>
+
+                    <EditText
+                            android:id="@+id/editbpTwo"
+                            android:layout_width="65dp"
+                            android:layout_height="30dp"
+                            android:maxLength="6"
+                            android:gravity="center"
+                            android:inputType="number|numberDecimal"
+                            android:background="@drawable/edittext_bg"
+                            android:textSize="18sp"/>
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/spacing_small_much"
+                            android:text="mmHg"
+                            android:textSize="@dimen/big_font_size"/>
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="SqO₂："
+                            android:textSize="@dimen/big_font_size"/>
+
+                    <EditText
+                            android:id="@+id/SpO_et"
+                            android:layout_width="65dp"
+                            android:layout_height="30dp"
+                            android:maxLength="6"
+                            android:gravity="center"
+                            android:inputType="number|numberDecimal"
+                            android:background="@drawable/edittext_bg"
+                            android:textSize="18sp"/>
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/spacing_small_much"
+                            android:text="%"
+                            android:textSize="@dimen/big_font_size"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <include layout="@layout/item_line"/>
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rvDepart"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:scrollbars="none"/>
+
+            </LinearLayout>
+            <include layout="@layout/item_line"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="10">
+
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:padding="10dp"
+                        android:text="输入:"
+                        android:textColor="@color/color_main_string"
+                        android:textSize="@dimen/big_font_size"/>
+
+                <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="8"
+                        android:baselineAligned="false">
+
+                    <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2">
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="内容："
+                                android:textSize="@dimen/big_font_size"/>
+
+                        <!--<Spinner-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"/>-->
+
+                        <EditText
+                                android:id="@+id/In_Project"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:maxLength="12"
+                                android:paddingLeft="8dp"
+                                android:background="@drawable/edittext_bg"
+                                android:textSize="18sp"/>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="6">
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="40dp"
+                                android:text="量："
+                                android:textSize="@dimen/big_font_size"/>
+
+                        <EditText
+                                android:id="@+id/In_Amount"
+                                android:layout_width="80dp"
+                                android:layout_height="30dp"
+                                android:maxLength="6"
+                                android:paddingLeft="8dp"
+                                android:background="@drawable/edittext_bg"
+                                android:textSize="18sp"/>
+
+                        <TextView
+                                android:visibility="invisible"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="@dimen/spacing_small_much"
+                                android:text="单位"
+                                android:textSize="@dimen/big_font_size"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <include layout="@layout/item_line"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="10">
+
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:padding="10dp"
+                        android:text="输出:"
+                        android:textColor="@color/color_main_string"
+                        android:textSize="@dimen/big_font_size"/>
+
+                <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="8"
+                        android:baselineAligned="false">
+
+                    <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="内容："
+                                android:textSize="@dimen/big_font_size"/>
+
+                        <!--<Spinner-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content" />-->
+
+                        <EditText
+                                android:id="@+id/Out_Project"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:maxLength="12"
+                                android:paddingLeft="8dp"
+                                android:background="@drawable/edittext_bg"
+                                android:textSize="18sp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3">
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="40dp"
+                                android:text="量："
+                                android:textSize="@dimen/big_font_size"/>
+
+                        <EditText
+                                android:id="@+id/Out_Amount"
+                                android:layout_width="80dp"
+                                android:layout_height="30dp"
+                                android:maxLength="6"
+                                android:background="@drawable/edittext_bg"
+                                android:paddingLeft="8dp"
+                                android:textSize="18sp"/>
+
+                        <TextView
+                            android:visibility="invisible"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="@dimen/spacing_small_much"
+                                android:text="单位"
+                                android:textSize="@dimen/big_font_size"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <include layout="@layout/item_line"/>
+
+            <TextView
+                    android:id="@+id/tvObservation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="特殊情况记录:"
+                    android:textColor="@color/color_main_string"
+                    android:textSize="@dimen/big_font_size"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp">
+
+                <View
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"/>
+
+                <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="8">
+
+                    <EditText
+                            android:id="@+id/exceptional"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="40dp"
+                            android:background="@drawable/edittext_bg"
+                            android:gravity="top"
+                            android:paddingLeft="8dp"
+                            android:lines="5"
+                            android:maxLines="5"
+                            android:maxLength="200"
+                            android:ellipsize="end"
+                            android:textSize="18sp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <include layout="@layout/item_line"/>
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="40dp">
+
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                    <TextView
+                            android:id="@+id/ExecutiveNurse"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="护士签名:"
+                            android:textColor="@color/color_main_string"
+                            android:textSize="@dimen/textSize_medium_small"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:orientation="horizontal"
+                        android:padding="10dp"
+                        android:visibility="gone">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="质控护士签名:"
+                            android:textColor="@color/color_main_string"
+                            android:textSize="@dimen/textSize_medium_small"/>
+
+                    <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/big_font_size"
+                            android:visibility="invisible"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@android:drawable/ic_menu_recent_history"
+            app:backgroundTint="@color/drug_select"/>
+    <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/login_btn_bg"
+            android:gravity="center"
+            android:text="保   存"
+            android:textColor="@color/common_color_white"
+            android:textSize="@dimen/textSize_medium_small"/>
+
+</RelativeLayout>

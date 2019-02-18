@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:background="#ffffff"
+                android:layout_height="wrap_content">
+
+    <RelativeLayout
+            android:id="@+id/rl_top"
+            android:layout_width="match_parent"
+            android:background="@color/button_normal"
+            android:layout_height="40dp">
+
+        <TextView
+                android:id="@+id/clear_tv"
+                android:gravity="center"
+                android:layout_marginLeft="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="21sp"
+                android:textColor="@color/color2"
+                android:text="清除"/>
+
+        <TextView
+                android:gravity="center"
+                android:layout_marginLeft="12dp"
+                android:layout_width="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_height="match_parent"
+                android:textSize="21sp"
+                android:textColor="@color/color2"
+                android:text="签名"/>
+
+        <TextView
+                android:id="@+id/confirm_btn"
+                android:layout_marginRight="12dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="21sp"
+                android:gravity="center"
+                android:textColor="@color/color2"
+                android:text="完成"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+            android:layout_below="@+id/rl_top"
+            android:background="@color/color1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <com.example.hjy.movenurse.widget.LinePathView
+                android:id="@+id/linePathView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        <!--<com.example.hjy.movenurse.widget.doodleview.DoodleView-->
+                <!--android:id="@+id/doodleView"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--/>-->
+
+        <!--android:background="@color/color2"-->
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.example.hjy.movenurse">
+
+    <!-- 在SDCard中创建与删除文件权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <!-- 往SDCard写入数据权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <!-- 从SDCard读取数据权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <!-- 允许访问摄像头 -->
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <!-- 访问网络的权限 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+
+    <application
+        android:name="com.fy.application.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name="com.fy.start.activity.StartActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@style/myTransparent">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="sensorLandscape">
+            <intent-filter>
+                <action android:name="com.example.hjy.movenurse.MainActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <!-- 登录 -->
+        <activity
+            android:name=".activity.LoginActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="com.example.hjy.movenurse.activity.LoginActivity"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <!-- 患者资料 -->
+        <activity
+            android:name=".activity.PatientDataActivity"
+            android:screenOrientation="sensorLandscape"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="com.example.hjy.movenurse.activity.PatientDataActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <!-- 患者资料详情 -->
+        <activity
+            android:name=".activity.PatientDataItemActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="sensorLandscape">
+            <intent-filter>
+                <action android:name="com.example.hjy.movenurse.activity.PatientDataItemActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <!-- 护理评估 -->
+        <activity
+            android:name=".nursing.FirstNurseOrderActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="sensorLandscape">
+            <intent-filter>
+                <action android:name="com.example.hjy.movenurse.nursing.FirstNurseOrderActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <!-- 首次护理记录  编辑 -->
+        <activity
+            android:name=".edit.firstnursing.NurseEditActivity"
+            android:windowSoftInputMode="stateHidden|stateUnchanged"
+            android:screenOrientation="sensorLandscape"/>
+        <!-- 儿童编辑页面 -->
+        <activity
+            android:name=".activity.ChildFirstNurseOrderActivity"
+            android:windowSoftInputMode="stateHidden|stateUnchanged"
+            android:screenOrientation="sensorLandscape"/>
+
+        <!-- 麻醉术后编辑页面 -->
+        <activity
+            android:name=".activity.AnesthesiaPostoperationActivity"
+            android:windowSoftInputMode="stateHidden|stateUnchanged"
+            android:screenOrientation="sensorLandscape"/>
+        <!-- 麻醉术前编辑页面 -->
+        <activity
+            android:name=".activity.AnesthesiaPreoperativeActivity"
+            android:windowSoftInputMode="stateHidden|stateUnchanged"
+            android:screenOrientation="sensorLandscape"/>
+        <!-- 压疮风险评估 -->
+        <activity
+            android:name=".activity.PressureSoresActivity"
+            android:screenOrientation="sensorLandscape"/>
+        <!-- 护理记录单编辑 -->
+        <activity
+            android:name=".edit.nursing.NursingRecordActivity"
+            android:windowSoftInputMode="stateHidden|stateUnchanged"
+            android:screenOrientation="sensorLandscape"/>
+        <!-- 产科产后记录单编辑 -->
+        <activity
+            android:name=".edit.antenatal.AntenatalRecordActivity"
+            android:windowSoftInputMode="stateHidden|stateUnchanged"
+            android:screenOrientation="sensorLandscape"/>
+        <!-- 产科产后记录单_编辑 -->
+        <activity
+            android:name=".obstetrics.ObstetricalPostpartumRecordActivity"
+            android:windowSoftInputMode="stateHidden|stateUnchanged"
+            android:screenOrientation="sensorLandscape"/>
+
+        <!-- 急诊抢救记录单 Activity -->
+        <activity
+            android:name=".salvage.EmergencySalvageActivity"
+            android:screenOrientation="sensorLandscape"/>
+        <!-- 产后观察记录单 Activity -->
+        <activity
+            android:name=".postpartum.PostpartumObserveRecordActivity"
+            android:screenOrientation="sensorLandscape"/>
+        <!-- 新生儿一般护理记录单 Activity -->
+        <activity
+            android:name=".newborngeneral.NewbornGeneralActivity"
+            android:screenOrientation="sensorLandscape"/>
+        <!-- 新生儿护理记录单 Activity -->
+        <activity
+            android:name=".newbornnurse.NewbornNurseActivity"
+            android:screenOrientation="sensorLandscape"/>
+
+        <!-- 新生儿科呼吸机辅助呼吸记录单 Activity -->
+        <activity
+            android:name=".auxiliary.RespiratorAuxiliaryActivity"
+            android:screenOrientation="sensorLandscape"/>
+
+        <!-- 病房管理列表 Activity -->
+        <activity
+            android:name=".wardmanage.WardManageListActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"/>
+        <!-- 病房管理 操作 界面 -->
+        <activity
+            android:name=".wardmanage.WardManageAcitivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"/>
+        <!-- 病房管理 包床操作 界面 -->
+        <activity
+            android:name=".wardmanage.packbed.PackBedActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+
+        <!-- 病房管理 请假操作 界面 -->
+        <activity
+            android:name=".wardmanage.leave.LeaveActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+
+
+
+        <!-- 医嘱管理 -->
+        <activity
+            android:name=".doctor.manage.DoctorManageActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="sensorLandscape">
+            <intent-filter>
+                <action android:name="com.example.hjy.movenurse.doctor.manage.DoctorManageActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <!-- 退药退费 -->
+        <activity
+            android:name=".administrative.adminmanage.AdministrativeManagementActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="sensorLandscape">
+            <intent-filter>
+                <action android:name="com.example.hjy.movenurse.administrative.adminmanage.AdministrativeManagementActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <!-- 上传列表 -->
+        <activity
+            android:name=".upload.UpLoadListActivity"
+            android:screenOrientation="sensorLandscape"/>
+
+        <!-- 设置界面 -->
+        <activity
+            android:name=".setting.SettingsActivity"
+            android:screenOrientation="sensorLandscape"/>
+
+
+        <!-- 扫描二维码 -->
+        <activity
+            android:name=".scan.ScanCaptureActivity"
+            android:screenOrientation="sensorLandscape">
+            <intent-filter>
+                <action android:name="com.example.hjy.movenurse.scan.ScanCaptureActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <!-- 手动输入 ID号 -->
+        <activity
+            android:name=".scan.ManualInputActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="adjustResize"/>
+        <!-- 扫描二维码 错误 或 输入ID 错误 -->
+        <activity
+            android:name=".scan.ScanErrorActivity"
+            android:screenOrientation="sensorLandscape"/>
+        <!-- 4_3首次护理记录单_压疮_身体部位选择 -->
+        <activity
+            android:name=".activity.SkinConditionActivity"
+            android:screenOrientation="sensorLandscape"/>
+        <activity
+            android:name=".activity.ChildConditionActivity"
+            android:screenOrientation="sensorLandscape"/>
+
+        <!--1_拒绝翻身知情同意书 -->
+        <activity
+            android:name=".patient.reject.PatientRejectActivity"
+            android:screenOrientation="sensorLandscape"/>
+        <!-- 使用热水袋注意 -->
+        <activity
+            android:name=".hotbag.UserHotBagActivity"
+            android:screenOrientation="sensorLandscape"/>
+        <!-- 坠床知情同意书 -->
+        <activity
+            android:name=".prevent.PreventTumbleActivity"
+            android:screenOrientation="sensorLandscape"/>
+        <!-- 出院健康指导 -->
+        <activity
+            android:name=".health.HealthGuidanceActivity"
+            android:screenOrientation="sensorLandscape"/>
+        <!-- 约束带 -->
+        <activity
+            android:name=".restraint.RestraintStrapActivity"
+            android:screenOrientation="sensorLandscape"/>
+
+    </application>
+
+</manifest>
